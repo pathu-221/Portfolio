@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
 
+import SvgDraw from './components/svgDraw/svgDraw';
+import Socials from './components/socials/socials';
+
 function App() {
+
+ //change elements when 420 1070  1710  1975
+
+ const [heads, setHead] = useState(['HOME', 'ABOUT', 'SKILLS', 'PROJECT', 'CONTACT']);
+ const [currentIndex, setIndex] = useState(0);
+
+ const changeElement = (pathlength) => {
+  console.log(pathlength);
+ }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='background-div'></div>
+      <Socials />
+      <div className='svg-container'>
+        <h1>{heads[currentIndex]}</h1>
+      <SvgDraw changeElement = { changeElement } />
+      </div>
     </div>
   );
 }

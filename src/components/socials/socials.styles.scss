@@ -1,0 +1,23 @@
+.socials-container {
+    position: fixed;
+    z-index: 5;
+    left: 117px;
+    top: 38px;
+
+    & ul {
+        display: flex;
+        list-style-type: none;
+        gap: 50px;
+
+
+        & svg {
+            margin: 10px;
+        }
+
+        & li:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+
+
+}
