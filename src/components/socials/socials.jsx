@@ -11,17 +11,17 @@ export default function Socials() {
     <nav className='socials-container'>
          <ul>
             <li>
-                <a href='https://github.com/pathu-221' target={'_blank'}>
+                <a href='https://github.com/pathu-221' rel="noreferrer" target={'_blank'}>
                     <BsGithub color='white' size={iconSize} />
                 </a>
             </li>
             <li>
-            <a href='https://www.linkedin.com/in/pratham-aggarwal-48516b120/' target={'_blank'}>
+            <a href='https://www.linkedin.com/in/pratham-aggarwal-48516b120/' rel="noreferrer" target={'_blank'}>
                     <BsLinkedin color='white' size={iconSize} />
                 </a>
             </li>
             <li>
-            <a href={'mailto:prathamaggarwal235@gmail.com'} target={'_blank'}>
+            <a href={'mailto:prathamaggarwal235@gmail.com'} rel="noreferrer" target={'_blank'}>
                     <FiMail color='white' size={iconSize} />
                 </a>
             </li>
