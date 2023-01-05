@@ -21,9 +21,10 @@
   }
   
   .path-svg {
+    --svg-height: 250px;
     background-color: var(--primary-orange-dark);
     border-radius: 50%;
-    height: 316px;
-    width: 316px;
+    height: var(--svg-height);
+    width: var(--svg-height);
   }
   

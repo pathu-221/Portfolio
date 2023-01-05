@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  min-height: 500vh;
+  background-color: var(--primary-orange);
+}
+
+.background-div {
+  background-color: var(--primary-orange-dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 500vh;
+}
+
+.svg-wrapper {
+  position: relative;
+}
+
+.svg-container {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .page-head {
+    position: inherit;
+    padding-right: 200px;
+    text-align: right;
+    width: 290px;
+    height: 54px;
+    overflow: hidden;
+  }
+  & h1 {
+    transform: translate(0, 0%);
+    font-size: 45px;
+    font-family: "Integral CF";
+    letter-spacing: 4px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-container {
+  background-color: black;
+  position: fixed;
+  
+}
