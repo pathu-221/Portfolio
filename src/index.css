@@ -1,16 +1,32 @@
 @import url('https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-  --primary-pink: #F6ADC9;
-  --primary-pink-dark: #E58C99;
-  --primary-purple: #CDB5D7;
-  --pimary-purple-dark: #BD8FD0; 
-  --primary-orange: #EF4323; 
-  --primary-orange-dark: #DA3213;
-  --primary-yellow: #F36D21;
-  --primary-yellow-dark: #EA5B0B;
+  --primary-About: #F6ADC9;
+  --primary-About-dark: #E58C99;
+  --primary-Projects: #CDB5D7;
+  --primary-Projects-dark: #BD8FD0; 
+  --primary-Home: #EF4323; 
+  --primary-Home-dark: #DA3213;
+  --primary-Skills: #F36D21;
+  --primary-Skills-dark: #EA5B0B;
+  --primary-Contacts: #9D1C2C;
+  --primary-Contacts-dark: #790C1A;
 }
+
+.droid-sans-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.droid-sans-regular {
+  font-family: droid-sans,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 * { 
   margin: 0;

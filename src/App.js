@@ -3,16 +3,39 @@ import './App.scss';
 
 import SvgDraw from './components/svgDraw/svgDraw';
 import Socials from './components/socials/socials';
-import { motion, AnimatePresence } from 'framer-motion';
-import { pageHeadAnimation } from './utils/animations';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import { motion, AnimatePresence, m} from 'framer-motion';
+import { bottomToTop } from './utils/animations';
+import styled from 'styled-components';
+
+//   --primary-pink: #F6ADC9;
+//   --primary-pink-dark: #E58C99;
+//   --primary-purple: #CDB5D7;
+//   --pimary-purple-dark: #BD8FD0; 
+//   --primary-Home: #EF4323; 
+//   --primary-Home-dark: #DA3213;
+//   --primary-yellow: #F36D21;
+//   --primary-yellow-dark: #EA5B0B;
+
+
+
+const Div = styled.div`
+  background-color: ${ props => props.color};
+  transition: .3s ease-out;
+`
+const DarkDiv = styled.div`
+  background-color: ${ props => { console.log(props); return props.color}};
+  transition: .4s ease-out;
+`
 
 function App() {
 
   //change elements when 420 1070  1710  1975
 
   const [currentElement, changeCurrentElement] = useState('Home');
-
-
 
   const changeElement = (pathlength) => {
 
@@ -21,40 +44,62 @@ function App() {
     if (pathlength >= 455 && pathlength < 712)
       changeCurrentElement('About');
     else if (pathlength >= 712 && pathlength < 955)
-      changeCurrentElement('skills')
+      changeCurrentElement('Skills')
     else if (pathlength >= 955 && pathlength < 1385)
       changeCurrentElement('Projects');
     else if (pathlength >= 1385)
-      changeCurrentElement('Contact');
+      changeCurrentElement('Contacts');
     else
       changeCurrentElement('Home')
 
   }
 
-
+  const element = () => {
+    switch(currentElement){
+      case "Home":
+        return <><Home /></>
+      case "About":
+        return <><About /></>
+      case "Skills":
+        return <><Skills /></>
+      case "Projects":
+        return <><Projects /></>
+      default:
+        return null;
+    }
+  }
   return (
-    <div className="App">
-      <div className='background-div'></div>
-      <Socials />
+    <Div className="App" color={ `var(--primary-${currentElement})` }>
+      <DarkDiv className='background-div'  color={`var(--primary-${currentElement}-dark)`}></DarkDiv>      <Socials />
 
-
-      <div className='svg-container'>
-        <AnimatePresence custom={'wait'}>
-          <motion.div className='page-head'>
+      <DarkDiv className='svg-container' color={`var(--primary-${currentElement}-dark)`}>
+        <AnimatePresence>
+          <motion.div key={currentElement} className='page-head'>
             <motion.h1
-              key={currentElement}
-              variants={pageHeadAnimation}
-              initial='initial'
-              animate='animate'
-              exit='exit'
+              variants={bottomToTop}
+              initial={'initial'}
+              animate={'animate'}
+              exit={'exit'}
             >{currentElement}</motion.h1>
           </motion.div>
         </AnimatePresence>
         <SvgDraw changeElement={changeElement} />
+      </DarkDiv>
+
+
+      
+      <div className='content-container'>
+      <AnimatePresence>
+        <motion.div key={currentElement} className='content-wrapper'>
+         { element()}
+        </motion.div>
+        </AnimatePresence>
       </div>
 
 
-    </div>
+
+
+    </Div>
   );
 }
 

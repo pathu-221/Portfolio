@@ -39,6 +39,10 @@ function SvgDraw(props) {
      changeElement(path);
     })
     animate.seek(path);
+
+    return () => {
+      window.removeEventListener('scroll', () => { console.log('removed')});
+    }
   },[path])
 
   return (
