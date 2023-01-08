@@ -11,17 +11,6 @@ import { motion, AnimatePresence, m} from 'framer-motion';
 import { bottomToTop } from './utils/animations';
 import styled from 'styled-components';
 
-//   --primary-pink: #F6ADC9;
-//   --primary-pink-dark: #E58C99;
-//   --primary-purple: #CDB5D7;
-//   --pimary-purple-dark: #BD8FD0; 
-//   --primary-Home: #EF4323; 
-//   --primary-Home-dark: #DA3213;
-//   --primary-yellow: #F36D21;
-//   --primary-yellow-dark: #EA5B0B;
-
-
-
 const Div = styled.div`
   background-color: ${ props => props.color};
   transition: .3s ease-out;
