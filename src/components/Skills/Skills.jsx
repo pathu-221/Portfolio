@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { bottomToTop, topToBottom } from '../../utils/animations';
+import { skills } from './skillsData';
 
 import './Skills.styles.scss';
 
@@ -21,9 +22,13 @@ export default function Skills() {
     </div>
      </motion.div>
      <div className='right-content'>
-       <div className="about-text">
 
-       </div>
+        <motion.span className='skills-container'>
+          
+          {
+            skills.map(skill => <motion.img src={skill} alt='skill icon'/>)
+          } 
+        </motion.span>
      </div>
      </>
   )

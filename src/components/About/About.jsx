@@ -31,8 +31,7 @@ export default function About() {
       Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
       Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i 
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit
     </motion.p>
     <motion.p
     variants={bottomToTop}

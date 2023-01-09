@@ -13,7 +13,7 @@ import styled from 'styled-components';
 
 const Div = styled.div`
   background-color: ${ props => props.color};
-  transition: .3s ease-out;
+  transition: .4s ease-out;
 `
 const DarkDiv = styled.div`
   background-color: ${ props => { console.log(props); return props.color}};
