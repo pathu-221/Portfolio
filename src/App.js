@@ -16,7 +16,7 @@ const Div = styled.div`
   transition: .4s ease-out;
 `
 const DarkDiv = styled.div`
-  background-color: ${ props => { console.log(props); return props.color}};
+  background-color: ${ props => {  return props.color}};
   transition: .4s ease-out;
 `
 
