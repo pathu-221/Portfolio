@@ -27,23 +27,17 @@ export default function About() {
     initial={'initial'}
     animate={'animate'}
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
+      rutrum massa ultrices, tristique tellus. Ut ac enim elit. 
     </motion.p>
     <motion.p
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i 
+      t ac porttitor nisi, sed congue sem.
+       Praesent porta posuere leo, ac sagittis lacus posuere ut. Vestibulum finibus 
+      eros congue, sollicitudin lectus lobortis, tempus lectus. Duis id ultrices urna.
     </motion.p> 
       </div>
     </div>
