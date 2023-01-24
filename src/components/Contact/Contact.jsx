@@ -1,9 +1,11 @@
-import React from 'react';
+import React from 'react'
 import { motion } from 'framer-motion';
-import { topToBottom, bottomToTop } from '../../utils/animations';
-import './Projects.styles.scss';
 
-export default function Projects() {
+import { topToBottom, bottomToTop } from '../../utils/animations';
+
+import './Contact.styles.scss';
+
+function Contact() {
   return (
     <>
    
@@ -14,15 +16,17 @@ export default function Projects() {
     initial={'initial'}
     animate={'animate'}
     className="ml10">
-      <motion.span className="letters">Have a look at my work -</motion.span><br></br>
+      <motion.span className="letters">I Would love to Talk to you :)</motion.span><br></br>
     </motion.h3>
     
    </div>
      </motion.div>
      <div className='right-content'>
 
-  
+
      </div>
      </>
   )
 }
+
+export default Contact

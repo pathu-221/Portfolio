@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import './App.scss';
-
+import gif from './assets/hero-illustration.png';
 import SvgDraw from './components/svgDraw/svgDraw';
 import Socials from './components/socials/socials';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 import { motion, AnimatePresence, m} from 'framer-motion';
 import { bottomToTop } from './utils/animations';
 import styled from 'styled-components';
@@ -37,7 +38,7 @@ function App() {
     else if (pathlength >= 955 && pathlength < 1385)
       changeCurrentElement('Projects');
     else if (pathlength >= 1385)
-      changeCurrentElement('Contacts');
+      changeCurrentElement('Contact');
     else
       changeCurrentElement('Home')
 
@@ -46,13 +47,15 @@ function App() {
   const element = () => {
     switch(currentElement){
       case "Home":
-        return <><Home /></>
+        return <><Home gif={gif}/></>
       case "About":
         return <><About /></>
       case "Skills":
         return <><Skills /></>
       case "Projects":
         return <><Projects /></>
+      case "Contact":
+        return <><Contact /></>
       default:
         return null;
     }

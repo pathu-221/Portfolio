@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion';
 import { bottomToTop, topToBottom } from '../../utils/animations';
-import gif from '../../assets/hero-illustration.png';
+
 import './Home.styles.scss';
 
-export default function Home() {
+export default function Home({gif}) {
 
 
   useEffect(() => {
