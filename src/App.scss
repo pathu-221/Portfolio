@@ -2,7 +2,6 @@
   text-align: center;
   min-height: 500vh;
   transition: .3s ease-out;
-  padding: 0 110px 0 110px;
 }
 
 .background-div {
@@ -37,6 +36,7 @@
     height: 54px;
     overflow: hidden;
   }
+
   & h1 {
     transform: translate(0, 0%);
     font-size: 45px;
@@ -65,5 +65,40 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+
+
+  .background-div {
+    background-color: var(--primary-orange-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+  }
+  .svg-container {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    & .page-head{
+      display: none;
+    }
+  }
+  .content-container {
+    
+    & .content-wrapper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 30px;
+      grid-column-start: 100vh;
+    }
   }
 }

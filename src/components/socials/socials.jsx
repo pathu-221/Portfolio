@@ -6,7 +6,7 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 
 export default function Socials() {
-    const iconSize = 30;
+    const iconSize = window.innerWidth < 800 ? 25 : 30;
   return (
     <nav className='socials-container'>
          <ul>

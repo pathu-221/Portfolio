@@ -1,8 +1,9 @@
 .socials-container {
     position: fixed;
     z-index: 5;
-    left: 117px;
-    top: 38px;
+    left: 100px;
+    top: 40px;
+
 
     & ul {
         display: flex;
@@ -12,13 +13,27 @@
         
         & svg {
             margin: 10px;
-            margin-left: 0;
         }
 
         & li:hover {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
+
     }
 
 
+}
+
+@media screen and (max-width: 800px) {
+    .socials-container{
+        display: none;
+        left: 20px;
+        top: auto;
+        bottom: 40px;;
+        & ul {
+            flex-direction: column-reverse;
+            gap: 15px;
+            align-items: flex-end;
+        }
+    }
 }
