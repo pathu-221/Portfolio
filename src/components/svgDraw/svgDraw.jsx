@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import anime from 'animejs';
-
+import SvgMobile from './svgMobile';
 
 import './svgDraw.styles.scss';
 
@@ -15,10 +15,10 @@ function SvgDraw(props) {
     const totalHeight = windowHeight * 5;
   
     const [path, setpath] = useState(( (window.scrollY + windowHeight) / totalHeight) * pathLength);
-    
-  useEffect(() => {
+    const [width, setWidth] = useState(window.innerWidth)
 
-
+    const initiate = () => {
+      
     var animate = anime({
       targets: '.st0',
       strokeDashoffset: [anime.setDashoffset, 0],
@@ -38,16 +38,28 @@ function SvgDraw(props) {
      setpath((pathLength) * scrollPercentage);
      changeElement(path);
     })
+    window.addEventListener('resize', (e) => {setWidth(window.innerWidth)});
+
     animate.seek(path);
 
+    }
+
+  useEffect(() => {
+
+    initiate();
+    console.log(width);
     return () => {
       window.removeEventListener('scroll', () => { console.log('removed')});
+      window.removeEventListener('resize', () => { console.log('removed')});
     }
-  },[path])
+
+  },[path, width])
 
   return (
     <>
-        <svg className='path-svg' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    {
+      width > 800 ? 
+       <svg className='path-svg' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
     <g >
       <path className="st0" d="M76.66,93.23C103.75,66.5,140.96,50,182.02,50c82.84,0,150,67.16,150,150s-67.16,150-150,150"/>
       <path className="st5" d="M76.66,93.23C103.75,66.5,140.96,50,182.02,50c82.84,0,150,67.16,150,150s-67.16,150-150,150"/>
@@ -74,7 +86,9 @@ function SvgDraw(props) {
 		<circle className="st2" cx="199.74" cy="50.66" r="5.7"/>
 	</g>
 </g></svg>
-
+: <SvgMobile initiate={initiate} changeElement={changeElement} />
+    }
+   
     </>
   )
 }

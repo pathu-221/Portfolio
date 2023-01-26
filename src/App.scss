@@ -29,6 +29,7 @@
   z-index: 5;
   
   & .page-head {
+    display: none;
     position: inherit;
     padding-right: 200px;
     text-align: right;
@@ -83,7 +84,6 @@ a {
   .svg-container {
     top: 50%;
     transform: translate(-50%, -50%);
-    display: none;
     & .page-head{
       display: none;
     }
