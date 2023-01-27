@@ -7,7 +7,7 @@ import './svgDraw.styles.scss';
 
 function SvgDraw(props) {
 
-  const { changeElement } = props;  
+  const { changeElement, width } = props;  
   //to calculate path length based on the percentage of window scrolled
     const pathLength = 1500;
     let scrollPercentage =  0;
@@ -15,7 +15,7 @@ function SvgDraw(props) {
     const totalHeight = windowHeight * 5;
   
     const [path, setpath] = useState(( (window.scrollY + windowHeight) / totalHeight) * pathLength);
-    const [width, setWidth] = useState(window.innerWidth)
+
 
     const initiate = () => {
       
@@ -38,7 +38,7 @@ function SvgDraw(props) {
      setpath((pathLength) * scrollPercentage);
      changeElement(path);
     })
-    window.addEventListener('resize', (e) => {setWidth(window.innerWidth)});
+
 
     animate.seek(path);
 
@@ -50,7 +50,6 @@ function SvgDraw(props) {
     console.log(width);
     return () => {
       window.removeEventListener('scroll', () => { console.log('removed')});
-      window.removeEventListener('resize', () => { console.log('removed')});
     }
 
   },[path, width])
@@ -86,7 +85,8 @@ function SvgDraw(props) {
 		<circle className="st2" cx="199.74" cy="50.66" r="5.7"/>
 	</g>
 </g></svg>
-: <SvgMobile initiate={initiate} changeElement={changeElement} />
+    :    
+  <SvgMobile initiate={initiate} changeElement={changeElement} />
     }
    
     </>

@@ -22,24 +22,18 @@
   
   .path-svg {
     --svg-height: 250px;
+    --svg-width: 250px;
     background-color: var(--primary-orange-dark);
     border-radius: 50%;
     height: var(--svg-height);
-    width: var(--svg-height);
+    width: var(--svg-width);
 
   }
-  .path-svg2 {
-    --svg-height: 250px;
-    background-color: var(--primary-orange-dark);
-    border-radius: 50%;
-    height: var(--svg-height);
-    width: var(--svg-height);
 
-  }
   
   @media screen and (max-width: 800px) {
     
     .path-svg {
-      --svg-height: 200px;
+      --svg-height: 800px;
     }
   }

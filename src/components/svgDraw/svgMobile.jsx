@@ -50,7 +50,7 @@ function SvgMobile(props) {
 
     return (
         <>
-            <svg className='path-svg2' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100">
+            <svg className='path-svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100">
                 <g id="Layer_1" data-name="Layer 1">
                 <line className="cls-1 st0" x1="55.05" y1="50" x2="445.05" y2="50"/>
                 <line className="line-thin" x1="55.05" y1="50" x2="445.05" y2="50"/>

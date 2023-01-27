@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.scss';
 import gif from './assets/hero-illustration.png';
 import SvgDraw from './components/svgDraw/svgDraw';
@@ -19,6 +19,10 @@ const Div = styled.div`
 const DarkDiv = styled.div`
   background-color: ${ props => {  return props.color}};
   transition: .4s ease-out;
+
+  @media screen and (max-width: 800px) {
+    background-color: ${ props => props.svg ? 'transparent' : null}
+  }
 `
 
 function App() {
@@ -26,6 +30,17 @@ function App() {
   //change elements when 420 1070  1710  1975
 
   const [currentElement, changeCurrentElement] = useState('Home');
+  const [width, setWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    
+    window.addEventListener('resize', (e) => {setWidth(window.innerWidth)});
+    return () => {
+      window.removeEventListener('resize', () => { console.log('removed')});
+
+    }
+  }, [])
+  
 
   const changeElement = (pathlength) => {
 
@@ -64,21 +79,35 @@ function App() {
     <Div className="App" color={ `var(--primary-${currentElement})` }>
       <DarkDiv className='background-div'  color={`var(--primary-${currentElement}-dark)`}></DarkDiv>      <Socials />
 
-      <DarkDiv className='svg-container' color={`var(--primary-${currentElement}-dark)`}>
-        <AnimatePresence>
-          <motion.div key={currentElement} className='page-head'>
-            <motion.h1
-              variants={bottomToTop}
-              initial={'initial'}
-              animate={'animate'}
-              exit={'exit'}
-            >{currentElement}</motion.h1>
-          </motion.div>
-        </AnimatePresence>
-        <SvgDraw changeElement={changeElement} />
-      </DarkDiv>
-
-
+      <DarkDiv className='svg-container' svg color={`var(--primary-${currentElement}-dark)`}>
+        {
+          width > 800 ? 
+          (<AnimatePresence>
+            <motion.div key={currentElement} className='page-head'>
+              <motion.h1
+                variants={bottomToTop}
+                initial={'initial'}
+                animate={'animate'}
+                exit={'exit'}
+              >{currentElement}</motion.h1>
+            </motion.div>
+          </AnimatePresence>) : null
+        }
+        <SvgDraw width={width} changeElement={changeElement} />
+        </DarkDiv>
+        {
+          width < 800 ? 
+          <AnimatePresence>
+            <motion.div key={currentElement} className='page-head'>
+              <motion.h1
+                variants={bottomToTop}
+                initial={'initial'}
+                animate={'animate'}
+                exit={'exit'}
+              >{currentElement}</motion.h1>
+            </motion.div>
+          </AnimatePresence> : null
+        }
       
       <div className='content-container'>
       <AnimatePresence>
