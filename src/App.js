@@ -25,6 +25,33 @@ const DarkDiv = styled.div`
   }
 `
 
+// *************** DONT READ, ONLY FOR THE DEVELOPER ********* 
+// 
+//dear future me if u r going to look at this code and feel stupid 
+//because you are, ur laziness to refactor and aiming about ur 
+//level, you are using a very complicated and difficult approach
+//to make this responsive
+//so the content pattern will change according to the width
+//lol
+// lol, I am an idiot, please dont read it
+
+// ⣿⣿⣿⣿⠿⢋⣩⣤⣴⣶⣶⣦⣙⣉⣉⣉⣉⣙⡛⢋⣥⣶⣶⣶⣶⣶⣬⡙⢿⣿
+// ⣿⣿⠟⣡⣶⣿⢟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠙
+// ⣿⢋⣼⣿⠟⣱⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢿⣿⣿⣿⣿⣧
+// ⠃⣾⣯⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣿⣿⡈⢿⣿⣿⣿⣿
+// ⢰⣶⣼⣿⣷⣿⣽⠿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡌⣿⣷⡀⠛⢿⣿⣿
+// ⢃⣺⣿⣿⣿⢿⠏⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡾⣿⣿⣿⣷⢹⣿⣷⣄⠄⠈⠉
+// ⡼⣻⣿⣷⣿⠏⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣞⣿⣿⣿⠸⣿⣿⣿⣿⣶⣤
+// ⣇⣿⡿⣿⠏⣸⣎⣻⣟⣿⣿⣿⢿⣿⣿⣿⣿⠟⣩⣼⢆⠻⣿⡆⣿⣿⣿⣿⣿⣿
+// ⢸⣿⡿⠋⠈⠉⠄⠉⠻⣽⣿⣿⣯⢿⣿⣿⡻⠋⠉⠄⠈⠑⠊⠃⣿⣿⣿⣿⣿⣿
+// ⣿⣿⠄⠄⣰⠱⠿⠄⠄⢨⣿⣿⣿⣿⣿⣿⡆⢶⠷⠄⠄⢄⠄⠄⣿⣿⣿⣿⣿⣿
+// ⣿⣿⠘⣤⣿⡀⣤⣤⣤⢸⣿⣿⣿⣿⣿⣿⡇⢠⣤⣤⡄⣸⣀⡆⣿⣿⣿⣿⣿⣿
+// ⣿⣿⡀⣿⣿⣷⣌⣉⣡⣾⣿⣿⣿⣿⣿⣿⣿⣌⣛⣋⣴⣿⣿⢣⣿⣿⣿⣿⡟⣿
+// ⢹⣿⢸⣿⣻⣶⣿⢿⣿⣿⣿⢿⣿⣿⣻⣿⣿⣿⡿⣿⣭⡿⠻⢸⣿⣿⣿⣿⡇⢹
+// ⠈⣿⡆⠻⣿⣏⣿⣿⣿⣿⣿⡜⣭⣍⢻⣿⣿⣿⣿⣿⣛⣿⠃⣿⣿⣿⣿⡿⠄⣼
+// ⣦⠘⣿⣄⠊⠛⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣼⣿⣿⣿⡿⠁⠄⠟
+
+
 function App() {
 
   //change elements when 420 1070  1710  1975
@@ -62,21 +89,23 @@ function App() {
   const element = () => {
     switch(currentElement){
       case "Home":
-        return <><Home gif={gif}/></>
+        return <><Home width={width} gif={gif}/></>
       case "About":
-        return <><About /></>
+        return <><About width={width} /></>
       case "Skills":
-        return <><Skills /></>
+        return <><Skills width={width} /></>
       case "Projects":
-        return <><Projects /></>
+        return <><Projects width={width}/></>
       case "Contact":
-        return <><Contact /></>
+        return <><Contact width={width}/></>
       default:
         return null;
     }
   }
   return (
-    <Div className="App" color={ `var(--primary-${currentElement})` }>
+    <Div 
+    
+    className="App" color={ `var(--primary-${currentElement})` }>
       <DarkDiv className='background-div'  color={`var(--primary-${currentElement}-dark)`}></DarkDiv>      <Socials />
 
       <DarkDiv className='svg-container' svg color={`var(--primary-${currentElement}-dark)`}>
@@ -116,9 +145,6 @@ function App() {
         </motion.div>
         </AnimatePresence>
       </div>
-
-
-
 
     </Div>
   );

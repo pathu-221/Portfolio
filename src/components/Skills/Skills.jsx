@@ -5,7 +5,11 @@ import { skills } from './skillsData';
 
 import './Skills.styles.scss';
 
-export default function Skills() {
+export default function Skills({ width }) {
+
+  
+
+
   return (
     <>
    
@@ -16,7 +20,7 @@ export default function Skills() {
      initial={'initial'}
      animate={'animate'}
      className="ml10">
-       <motion.span className="letters">Here's what I use</motion.span><br></br>
+       Here's what I use
      </motion.h3>
      
     </div>
@@ -25,15 +29,16 @@ export default function Skills() {
 
       <div className="skills-container">
         <div className="skills-content">
-          <h2>Programming languages and framework </h2>
-          <span className="skills-images">
+          <h4>Languages and framework </h4>
+          <ul className="skills-images">
              {
-            skills.map(skill => <motion.img src={skill} alt='skill icon'/>)
+            skills.map(skill => 
+              <li><motion.img src={skill} alt='skill icon'/></li>)
           } 
-          </span>
+          </ul>
         </div>
         <div className="skills-content">
-          <h2>Tools </h2>
+          <h4>Tools </h4>
           <span className="skills-images">
              {
             skills.map(skill => <motion.img src={skill} alt='skill icon'/>)

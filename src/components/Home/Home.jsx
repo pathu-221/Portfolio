@@ -28,6 +28,7 @@ export default function Home({gif}) {
       <motion.span>A web developer from India</motion.span>
     </motion.h3>
     <motion.p
+    className='para-text'
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}

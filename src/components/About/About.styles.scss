@@ -6,4 +6,15 @@
     place-items: center;
     text-align: left;
     font-size: 18px;
+    text-align: justify;
+    margin-right: 10px;;
+    & p {
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-text {
+        align-self: flex-start;
+    }
 }

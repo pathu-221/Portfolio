@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { bottomToTop, topToBottom } from '../../utils/animations';
 import './About.styles.scss';
 
-export default function About() {
+export default function About({ width }) {
+  console.log(width);
   return (
     <>
    
@@ -17,12 +18,11 @@ export default function About() {
       <motion.span className="letters">Who am I? And </motion.span><br></br>
       <motion.span>What I do?</motion.span>
     </motion.h3>
-    
-   </div>
-    </motion.div>
-    <div className='right-content'>
+    {
+      width > 800 ?
+      null :
       <div className="about-text">
-      <motion.p
+    <motion.p
     variants={topToBottom}
     initial={'initial'}
     animate={'animate'}
@@ -30,6 +30,22 @@ export default function About() {
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
       rutrum massa ultrices, tristique tellus. Ut ac enim elit. 
     </motion.p>
+    </div>
+    }
+   </div>
+    </motion.div>
+    <div className='right-content'>
+      <div className="about-text">
+     {
+      width > 800 ?  <motion.p
+      variants={topToBottom}
+      initial={'initial'}
+      animate={'animate'}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
+        rutrum massa ultrices, tristique tellus. Ut ac enim elit. 
+      </motion.p> : null
+     }
     <motion.p
     variants={bottomToTop}
     initial={'initial'}
