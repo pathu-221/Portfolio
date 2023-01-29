@@ -1,0 +1,57 @@
+h1.demo {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #f5f6ff;
+  }
+
+  input, textarea { border-style: none; background: transparent; outline: none; }
+
+  // colors
+  
+  // gradient animation
+  @keyframes gradient { 
+    0%{background-position:0 0}
+    100%{background-position:100% 0}
+  }
+  
+  .webflow-style-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    background: var(--primary-Contact-dark);
+    color: white;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 999;
+      height: 2px;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+      background-position: 0% 0%;
+      background-color: white;
+    }
+  }
+  
+  .webflow-style-input input, textarea {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    &::-webkit-input-placeholder {
+      color: rgba(white, 0.8);
+    }
+
+    & textarea {
+        width: 100%;;
+    }
+  }
