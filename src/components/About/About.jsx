@@ -42,7 +42,7 @@ export default function About({ width }) {
       initial={'initial'}
       animate={'animate'}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
+        <span className="large-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
         rutrum massa ultrices, tristique tellus. Ut ac enim elit. 
       </motion.p> : null
      }
