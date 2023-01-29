@@ -17,7 +17,15 @@ export default function Projects() {
     className="ml10">
       <motion.span className="letters">Have a look at my work -</motion.span><br></br>
     </motion.h3>
-    
+    <motion.p
+    className='para-text'
+    variants={bottomToTop}
+    initial={'initial'}
+    animate={'animate'}
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
+    </motion.p>
    </div>
      </motion.div>
      <div className='right-content'>

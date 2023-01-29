@@ -15,37 +15,33 @@ export default function About({ width }) {
     initial={'initial'}
     animate={'animate'}
     className="ml10">
-      <motion.span className="letters">Who am I? And </motion.span><br></br>
-      <motion.span>What I do?</motion.span>
+      <motion.span className="letters">Who am I? And What i do?</motion.span><br></br>
     </motion.h3>
-    {
-      width > 800 ?
-      null :
-      <div className="about-text">
     <motion.p
-    variants={topToBottom}
+    className='para-text'
+    variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
-      rutrum massa ultrices, tristique tellus. Ut ac enim elit. 
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
     </motion.p>
-    </div>
-    }
+
    </div>
     </motion.div>
     <div className='right-content'>
       <div className="about-text">
-     {
-      width > 800 ?  <motion.p
+     {/* {
+      width > 800 ?   : null
+     } */}
+     <motion.p
       variants={topToBottom}
       initial={'initial'}
       animate={'animate'}
       >
         <span className="large-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
         rutrum massa ultrices, tristique tellus. Ut ac enim elit. 
-      </motion.p> : null
-     }
+      </motion.p>
     <motion.p
     variants={bottomToTop}
     initial={'initial'}

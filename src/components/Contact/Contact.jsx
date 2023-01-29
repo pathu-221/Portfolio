@@ -16,9 +16,17 @@ function Contact() {
     initial={'initial'}
     animate={'animate'}
     className="ml10">
-      <motion.span className="letters">I Would love to Talk to you :)</motion.span><br></br>
+      <motion.span className="letters">I Would love to Talk :)</motion.span><br></br>
     </motion.h3>
-    
+    <motion.p
+    className='para-text'
+    variants={bottomToTop}
+    initial={'initial'}
+    animate={'animate'}
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
+    </motion.p>
    </div>
      </motion.div>
      <div className='right-content'>

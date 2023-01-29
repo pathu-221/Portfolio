@@ -23,10 +23,11 @@
 
   .content {
     padding-left: 110px;
-    padding-right: 40px;
+    padding-right: 0;
     text-align: left;
     display: flex;
     align-items: center;
+
     & .para-text {
       overflow: hidden;
       font-size: 20px;

@@ -15,7 +15,7 @@ export default function Skills({ width }) {
     <>
    
     <motion.div className='content'>  
-    <div className="head-content skills-header">
+    <div className="head-content">
     <motion.h3
      variants={bottomToTop}
      initial={'initial'}
@@ -23,7 +23,15 @@ export default function Skills({ width }) {
      className="ml10">
        Here's what I use 
      </motion.h3>
-     
+     <motion.p
+    className='para-text'
+    variants={bottomToTop}
+    initial={'initial'}
+    animate={'animate'}
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
+    </motion.p>
     </div>
      </motion.div>
      <div className='right-content'>

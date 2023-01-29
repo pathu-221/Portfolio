@@ -25,19 +25,23 @@
   --primary-Skills-dark: #790C1A;
 }
 
-.droid-sans-bold {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
 }
 
-
-.droid-sans-regular {
-  font-family: droid-sans,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
 }
-
 
 * { 
   margin: 0;
