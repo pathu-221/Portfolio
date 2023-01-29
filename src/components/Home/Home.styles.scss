@@ -43,21 +43,25 @@
   }
 
   .right-content {
-    display: grid;
-    place-items: center;
-    position: relative;
+    display: flex;
+    gap: 0;
+    // place-items: center;
+    // position: relative;
     padding-right: 110px;
     padding-left: 120px;
 
     & .image-container {
       overflow: hidden;
+      align-self: center;
+      
+     & img {
+        width: 450px;
+        max-width: 100%;      
+        z-index: -1;
+  
+      }
     }
-    & img {
-      width: 450px;
-      max-width: 100%;      
-      z-index: -1;
-
-    }
+   
   }
 
   @media screen and (max-width: 800px) {

@@ -1,13 +1,20 @@
+.skills-header {
+    align-items: center;
+    display: flex;
+}
+
 .skills-container {
     place-items: center;
     text-align: left;
     font-size: 18px;
+    align-self: center;
+    width: 100%;
 
     & ul {
         list-style-type: none;
     }
     & h4 {
-        font-size: 25px;
+        font-size: 24px;
         margin: 10px 0;
     }
 

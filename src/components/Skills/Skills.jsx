@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { bottomToTop, topToBottom } from '../../utils/animations';
 import { skills } from './skillsData';
+import { IoIosArrowForward } from 'react-icons/io';
 
 import './Skills.styles.scss';
 
@@ -14,13 +15,13 @@ export default function Skills({ width }) {
     <>
    
     <motion.div className='content'>  
-    <div className="head-content">
+    <div className="head-content skills-header">
     <motion.h3
      variants={bottomToTop}
      initial={'initial'}
      animate={'animate'}
      className="ml10">
-       Here's what I use
+       Here's what I use 
      </motion.h3>
      
     </div>
