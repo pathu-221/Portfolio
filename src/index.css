@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Integral CF";
-  src: url("http://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot"); /* IE9*/
-  src: url("http://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("http://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2") format("woff2"), /* chrome firefox */
-  url("http://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff") format("woff"), /* chrome firefox */
-  url("http://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-  url("http://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF") format("svg"); /* iOS 4.1- */
+  src: url("assets/custom-font/Demo_Fonts/integral-cf.ttf"); /* IE9*/
+  src: url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("embedded-opentype"), /* IE6-IE8 */
+  url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("woff2"), /* chrome firefox */
+  url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("woff"), /* chrome firefox */
+  url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("svg"); /* iOS 4.1- */
 }
 
 :root {
