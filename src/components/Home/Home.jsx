@@ -24,8 +24,8 @@ export default function Home({gif}) {
     initial={'initial'}
     animate={'animate'}
     className="ml10">
-      <motion.span className="letters">Hi there, I am Pratham, </motion.span><br></br>
-      <motion.span>A web developer from India</motion.span>
+      Hi there, I am Pratham, 
+      A web developer from India
     </motion.h3>
     <motion.p
     className='para-text'

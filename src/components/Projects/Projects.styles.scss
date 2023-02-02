@@ -46,3 +46,20 @@
 .button-31:focus {
   opacity: .75;
 }
+
+@media screen and (max-width: 800px) {
+  .button-31 {
+    padding: 4px 6px;
+  }
+  .project-type {
+
+    & .project-buttons-container {
+      align-self: flex-start;
+    }
+
+    & .project-overview {
+      max-width: 100%;
+      overflow-x: scroll;
+    }
+  }
+}

@@ -21,17 +21,14 @@ const DarkDiv = styled.div`
   transition: .4s ease-out;
 
   @media screen and (max-width: 800px) {
-    background-color: ${ props => props.svg ? 'transparent' : null}
+    background-color: ${ props => props.svg ? 'transparent' : null};
   }
 `
 
 // *************** DONT READ, ONLY FOR THE DEVELOPER ********* 
 // 
 //dear future me if u r going to look at this code and feel stupid 
-//because you are, ur laziness to refactor and aiming about ur 
-//level, you are using a very complicated and difficult approach
-//to make this responsive
-//so the content pattern will change according to the width
+//because you are,
 //lol
 // lol, I am an idiot, please dont read it
 

@@ -32,13 +32,13 @@ export default function Projects() {
       <div className="project-type">
         <div className="project-buttons-container">
         <button class="button-31" role="button">Beginner</button>
-   <button class="button-31" role="button">Intermediate</button>
-   <button class="button-31" role="button">Advanced</button>
-  
+        <button class="button-31" role="button">Intermediate</button>
+        <button class="button-31" role="button">Advanced</button>
+        
         </div>
         <div className="project-overview">
-    <Projectsoverview />
-   </div>
+          <Projectsoverview />
+        </div>
       </div>
    
      </div>

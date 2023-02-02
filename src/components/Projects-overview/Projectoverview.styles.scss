@@ -1,21 +1,26 @@
 .project-desc-container {
     align-self: center;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+
     padding: 10px;
-    max-height: 50vh;
-    overflow-y: scroll;
+
     width: 100%;
     text-align: center;
     
     background-color: var(--primary-Projects-dark);
 
+    & .project-desc-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-height: 50vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
 
 }
 
-.project-desc-container::-webkit-scrollbar,
-.project-desc-container::-webkit-scrollbar-thumb {
+.project-desc-wrapper::-webkit-scrollbar,
+.project-desc-wrapper::-webkit-scrollbar-thumb {
   width: 26px;
   border-radius: 13px;
   background-clip: padding-box;
@@ -23,7 +28,20 @@
 
 }
 
-.project-desc-container::-webkit-scrollbar-thumb {        
+.project-desc-wrapper::-webkit-scrollbar-thumb {        
   box-shadow: inset 0 0 0 10px;
   color: var(--primary-Projects);
+}
+
+
+@media screen and (max-width: 800px) {
+  .project-desc-container {
+    max-width: calc(100vw - 70px);
+    & .project-desc-wrapper {
+      flex-direction: row;
+      max-width: 100%;;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+  }
 }
