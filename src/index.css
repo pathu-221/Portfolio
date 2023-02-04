@@ -1,0 +1,66 @@
+/* @import url('https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("assets/custom-font/Demo_Fonts/integral-cf.ttf"); /* IE9*/
+  src: url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("embedded-opentype"), /* IE6-IE8 */
+  url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("woff2"), /* chrome firefox */
+  url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("woff"), /* chrome firefox */
+  url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("assets/custom-font/Demo_Fonts/integral-cf.ttf") format("svg"); /* iOS 4.1- */
+}
+
+:root {
+  --primary-About: #F6ADC9;
+  --primary-About-dark: #E58C99;
+  --primary-Projects: #CDB5D7;
+  --primary-Projects-dark: #BD8FD0; 
+  --primary-Home: #EF4323; 
+  --primary-Home-dark: #DA3213;
+  --primary-Contact: #F36D21;
+  --primary-Contact-dark: #EA5B0B;
+  --primary-Skills: #9D1C2C;
+  --primary-Skills-dark: #790C1A;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    /* font-family: droid-sans,sans-serif;
+    font-style: normal; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

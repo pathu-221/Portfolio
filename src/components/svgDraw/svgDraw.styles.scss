@@ -1,0 +1,39 @@
+
+.st0 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+  
+  .st1 {
+    fill: #FFFFFF;
+  }
+  
+  .st2 {
+    fill: #F36D21;
+  }
+  
+  .st5 {
+    stroke: white;
+    fill: none;
+    stroke-width: .3;
+  }
+  
+  .path-svg {
+    --svg-height: 250px;
+    --svg-width: 250px;
+    background-color: var(--primary-orange-dark);
+    border-radius: 50%;
+    height: var(--svg-height);
+    width: var(--svg-width);
+
+  }
+
+  
+  @media screen and (max-width: 800px) {
+    
+    .path-svg {
+      --svg-height: 800px;
+    }
+  }
