@@ -1,4 +1,20 @@
-const transition = { duration: 0.4, ease: [0.43, 0.13, 0.23, 0.96] };
+const transition = { 
+    duration: 0.4, 
+    ease: [0.43, 0.13, 0.23, 0.96],
+};
+
+export const staggeredUp = {
+    hidden: { y: '100%'  },
+    show: {
+      y: 0,
+      transition: {
+        ...transition,
+        staggerChildren: .1
+      }
+    },
+    exit: { y: '100%'}
+  }
+  
 
 
 export const bottomToTop = {
@@ -26,9 +42,9 @@ export const topToBottom = {
         y: '0',
         transition
     },
-    // exit: {
-    //     y: '100%',
-    //     transition
+    exit: {
+        y: '100%',
+        transition
 
-    // }
+    }
 }

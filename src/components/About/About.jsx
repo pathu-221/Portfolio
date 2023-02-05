@@ -14,6 +14,7 @@ export default function About({ width }) {
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
+    exit={'exit'}
     className="ml10">
       <motion.span className="letters">Who am I? And What i do?</motion.span><br></br>
     </motion.h3>
@@ -22,6 +23,7 @@ export default function About({ width }) {
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
+    exit={'initial'}
     >
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
       Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
@@ -38,6 +40,7 @@ export default function About({ width }) {
       variants={topToBottom}
       initial={'initial'}
       animate={'animate'}
+      exit={'initial'}
       >
         <span className="large-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
         rutrum massa ultrices, tristique tellus. Ut ac enim elit. 
@@ -46,6 +49,7 @@ export default function About({ width }) {
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
+    exit={'initial'}
     >
       t ac porttitor nisi, sed congue sem.
        Praesent porta posuere leo, ac sagittis lacus posuere ut. Vestibulum finibus 

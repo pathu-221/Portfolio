@@ -12,8 +12,13 @@
 
     & ul {
         list-style-type: none;
+     
+    }
+    & .skills-content {
+        overflow-y: hidden;
     }
     & h4 {
+   
         font-size: 24px;
         margin: 10px 0;
     }
@@ -24,6 +29,10 @@
         gap: 16px;
         place-items: center;
         margin-bottom: 25px;
+        // overflow-y: hidden;
+        & li {
+            overflow-y: hidden;
+        }
     }
     & img {
         background-color: rgba(0, 0, 0, 0.1);

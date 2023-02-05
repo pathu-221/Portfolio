@@ -18,7 +18,7 @@ const Div = styled.div`
 `
 const DarkDiv = styled.div`
   background-color: ${ props => {  return props.color}};
-  transition: .4s ease-out;
+  transition: .6s ease-out;
 
   @media screen and (max-width: 800px) {
     background-color: ${ props => props.svg ? 'transparent' : null};
@@ -136,7 +136,7 @@ function App() {
         }
       
       <div className='content-container'>
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <motion.div key={currentElement} className='content-wrapper'>
          { element()}
         </motion.div>

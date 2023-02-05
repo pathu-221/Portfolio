@@ -23,6 +23,7 @@ export default function Home({gif}) {
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
+    exit={'exit'}
     className="ml10">
       Hi there, I am Pratham, 
       A web developer from India
@@ -32,6 +33,7 @@ export default function Home({gif}) {
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
+    exit={'initial'}
     >
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
       Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
@@ -40,11 +42,13 @@ export default function Home({gif}) {
     </motion.div>
     <div className='right-content'>
       <motion.div
+     
       className="image-container">
       <motion.img
-      variants={topToBottom}
-      initial={'initial'}
-      animate={'animate'}
+       variants={topToBottom}
+       initial={'initial'}
+       animate={'animate'}
+       exit={'exit'}
       src={ gif} />
       </motion.div>  
     </div>

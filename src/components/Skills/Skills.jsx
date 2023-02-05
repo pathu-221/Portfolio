@@ -1,14 +1,18 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { bottomToTop, topToBottom } from '../../utils/animations';
+import { bottomToTop, topToBottom, staggeredUp } from '../../utils/animations';
 import { skills } from './skillsData';
-import { IoIosArrowForward } from 'react-icons/io';
 
 import './Skills.styles.scss';
 
-export default function Skills({ width }) {
 
-  
+const item = {
+  hidden: { y: '100%' },
+  show: { y: '0' },
+  exit: { y: '100%'}
+}
+
+export default function Skills() {
 
 
   return (
@@ -17,9 +21,10 @@ export default function Skills({ width }) {
     <motion.div className='content'>  
     <div className="head-content">
     <motion.h3
-     variants={bottomToTop}
+     variants={topToBottom}
      initial={'initial'}
-     animate={'animate'}
+      animate={'animate'}
+      exit={'initial'}
      className="ml10">
        Here's what I use 
      </motion.h3>
@@ -28,6 +33,7 @@ export default function Skills({ width }) {
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
+    exit={'initial'}
     >
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
       Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
@@ -36,33 +42,52 @@ export default function Skills({ width }) {
      </motion.div>
      <div className='right-content'>
 
-      <div className="skills-container">
-        <div className="skills-content">
+      <motion.div  className="skills-container" >
+        <motion.div
+          className="skills-content">
           <h4>Languages and framework </h4>
-          <ul className="skills-images">
+          <motion.ul 
+          variants={staggeredUp}
+          initial="hidden"
+          animate="show"
+          exit={'hidden'}
+          className="skills-images">
              {
             skills.map(skill => 
-              <li><motion.img src={skill} alt='skill icon'/></li>)
+              <motion.li
+             
+              >
+                <motion.img  variants={item} src={skill} alt='skill icon'/>
+              </motion.li>)
           } 
-          </ul>
-        </div>
-        <div className="skills-content">
-          <h4>Tools </h4>
-          <span className="skills-images">
+          </motion.ul>
+        </motion.div>
+        <motion.div 
+        variants={bottomToTop}
+        className="skills-content">
+          <motion.h4 
+          variants={bottomToTop}
+          initial={'initial'}
+          animate={'animate'}
+          exit={'initial'}>Tools </motion.h4>
+          <motion.ul 
+          variants={staggeredUp}
+          initial="hidden"
+          animate="show"
+          exit={'hidden'}
+          className="skills-images">
              {
-            skills.map(skill => <motion.img src={skill} alt='skill icon'/>)
+            skills.map(skill => 
+              <motion.li
+             
+              >
+                <motion.img  variants={item} src={skill} alt='skill icon'/>
+              </motion.li>)
           } 
-          </span>
-        </div>
-      </div>
+          </motion.ul>
+        </motion.div>
+      </motion.div>
 
-{/* 
-        <motion.div className='skills-container'>
-          
-          {
-            skills.map(skill => <motion.img src={skill} alt='skill icon'/>)
-          } 
-        </motion.div> */}
      </div>
      </>
   )
