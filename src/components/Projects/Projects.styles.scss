@@ -53,8 +53,10 @@
   }
   .project-type {
 
+    padding-top: 10px;
+    justify-content: flex-start;
     & .project-buttons-container {
-      align-self: flex-start;
+      align-self: center;
     }
 
     & .project-overview {

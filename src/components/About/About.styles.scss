@@ -8,7 +8,6 @@
     text-align: left;
     font-size: 18px;
     text-align: justify;
-    margin-right: 10px;;
 
     .large-letter {
         font-size: 45px;
@@ -20,6 +19,11 @@
 
 @media screen and (max-width: 800px) {
     .about-text {
-        align-self: flex-start;
+        font-size: 15px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        height: inherit;
     }
 }

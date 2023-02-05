@@ -37,6 +37,7 @@
 @media screen and (max-width: 800px) {
   .project-desc-container {
     max-width: calc(100vw - 70px);
+    max-height: 35vh;
     & .project-desc-wrapper {
       flex-direction: row;
       max-width: 100%;;

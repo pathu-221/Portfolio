@@ -9,9 +9,9 @@ function CustomInput(props) {
         <div class="webflow-style-input">
         {
             type === 'message'?
-            <textarea class="" rows={'5'} type={ 'text' } placeholder={placeholder}/>
+            <textarea className="" rows={'4'} type={ 'text' } placeholder={placeholder}/>
             :
-            <input class="" type={ type } placeholder={placeholder}></input>
+            <input className="" type={ type } placeholder={placeholder}></input>
         }
         </div>
 

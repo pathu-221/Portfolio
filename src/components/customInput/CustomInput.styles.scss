@@ -14,10 +14,6 @@ h1.demo {
   // colors
   
   // gradient animation
-  @keyframes gradient { 
-    0%{background-position:0 0}
-    100%{background-position:100% 0}
-  }
   
   .webflow-style-input {
     position: relative;
@@ -51,11 +47,22 @@ h1.demo {
     font-size: 20px;
     line-height: 2.4rem;
     vertical-align: middle;
+
     &::-webkit-input-placeholder {
       color: rgba(white, 0.8);
     }
 
     & textarea {
-        width: 100%;;
+        width: 100%;
+        min-height: 5em;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .webflow-style-input {
+      padding: 5px 10px;
+    }
+    .webflow-style-input input, textarea {
+      font-size: 13px;
     }
   }

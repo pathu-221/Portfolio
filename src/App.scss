@@ -71,6 +71,7 @@ a {
   }
 }
 
+
 @media screen and (max-width: 800px) {
 
 
@@ -86,16 +87,16 @@ a {
 
   .svg-container {
     top: 50vh;
-    left: 90vw;
+    left: 95vw;
     transform: translate(-50%, -50%) rotate(90deg);
-
+    z-index: 0;
 
   }
 
   .page-head{
     z-index: 50;
     position: fixed;
-    left: 40px;
+    left: 20px;
     top: 40px;
     padding: 0;
     width: auto;
@@ -103,6 +104,7 @@ a {
     overflow: hidden;
     font-size: 1.3rem;
   }
+
   .content-container {
     
     & .content-wrapper {
@@ -112,7 +114,7 @@ a {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-      gap: 30px;
+      gap: 25px;
       grid-column-start: 100vh;
     }
   }
