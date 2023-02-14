@@ -24,7 +24,6 @@ function SvgMobile(props) {
       delay: function(el, i) { return i * 250 },
     });
    
-    // console.log(window.innerHeight, path);
 
     window.addEventListener('scroll', (e) => {
 

@@ -24,13 +24,13 @@ const DarkDiv = styled.div`
     background-color: ${ props => props.svg ? 'transparent' : null};
   }
 `
-
-// *************** DONT READ, ONLY FOR THE DEVELOPER ********* 
-// 
-//dear future me if u r going to look at this code and feel stupid 
-//because you are,
-//lol
-// lol, I am an idiot, please dont read it
+/**
+ * 
+ * @returns nothing
+ * this is for me if i m having trouble with responsiveness
+ * what should i do i am beyond saving 
+ * please help
+ */
 
 // ⣿⣿⣿⣿⠿⢋⣩⣤⣴⣶⣶⣦⣙⣉⣉⣉⣉⣙⡛⢋⣥⣶⣶⣶⣶⣶⣬⡙⢿⣿
 // ⣿⣿⠟⣡⣶⣿⢟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠙
@@ -58,7 +58,6 @@ function App() {
 
   useEffect(() => {
     
-    window.addEventListener('resize', (e) => {setWidth(window.innerWidth)});
     return () => {
       window.removeEventListener('resize', () => { console.log('removed')});
 
@@ -80,6 +79,8 @@ function App() {
       changeCurrentElement('Contact');
     else
       changeCurrentElement('Home')
+
+    console.log(currentElement);
 
   }
 

@@ -32,6 +32,8 @@
         // overflow-y: hidden;
         & li {
             overflow-y: hidden;
+            max-width: 80px;
+        max-height: 80px;
         }
     }
     & img {
@@ -51,12 +53,12 @@
         }
 
         & .skills-images {
-            grid-template-columns: repeat(auto-fill, 50px)
+            grid-template-columns: repeat(auto-fill, 40px)
         }
 
         & img {
-            max-width: 50px;
-            max-height: 50px;
+            max-width:  40px;
+            max-height:  40px;
             ;
         }
     }

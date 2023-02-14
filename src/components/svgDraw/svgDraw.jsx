@@ -28,7 +28,7 @@ function SvgDraw(props) {
       delay: function(el, i) { return i * 250 },
     });
    
-    // console.log(window.innerHeight, path);
+
 
     window.addEventListener('scroll', (e) => {
 
@@ -47,7 +47,6 @@ function SvgDraw(props) {
   useEffect(() => {
 
     initiate();
-    console.log(width);
     return () => {
       window.removeEventListener('scroll', () => { console.log('removed')});
     }
