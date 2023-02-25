@@ -24,12 +24,12 @@ const DarkDiv = styled.div`
     background-color: ${ props => props.svg ? 'transparent' : null};
   }
 `
+
 /**
  * 
- * @returns nothing
- * this is for me if i m having trouble with responsiveness
- * what should i do i am beyond saving 
- * please help
+ * @returns i dont know what to do
+ * i am having trouble with responsiveness
+ * this sucks
  */
 
 // ⣿⣿⣿⣿⠿⢋⣩⣤⣴⣶⣶⣦⣙⣉⣉⣉⣉⣙⡛⢋⣥⣶⣶⣶⣶⣶⣬⡙⢿⣿
@@ -58,6 +58,9 @@ function App() {
 
   useEffect(() => {
     
+    window.addEventListener('resize', (e) => {
+      setWidth(window.innerWidth);
+    });
     return () => {
       window.removeEventListener('resize', () => { console.log('removed')});
 
@@ -69,18 +72,16 @@ function App() {
 
     //component will change according to the length of the path not 
     //to the amount scrolled
-    if (pathlength >= 455 && pathlength < 712)
-      changeCurrentElement('About');
-    else if (pathlength >= 712 && pathlength < 955)
-      changeCurrentElement('Skills')
-    else if (pathlength >= 955 && pathlength < 1385)
-      changeCurrentElement('Projects');
-    else if (pathlength >= 1385)
-      changeCurrentElement('Contact');
+    if ((window.pageYOffset >= 433 && window.pageYOffset < 1091) || (pathlength >= 455 && pathlength < 712)) 
+      {  changeCurrentElement('About');}
+    else if ((window.pageYOffset >= 1091 && window.pageYOffset < 1733) || (pathlength >= 712 && pathlength < 955))  //1091
+    {  changeCurrentElement('Skills')}
+    else if ((window.pageYOffset >= 1733 && window.pageYOffset < 2760) || (pathlength >= 955 && pathlength < 1385))  //1733
+    {  changeCurrentElement('Projects');}
+    else if (window.pageYOffset >= 2760 || pathlength >= 1385) //3160
+    { changeCurrentElement('Contact');}
     else
-      changeCurrentElement('Home')
-
-    console.log(currentElement);
+    {   changeCurrentElement('Home')}
 
   }
 

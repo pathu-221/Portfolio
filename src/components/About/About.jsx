@@ -4,7 +4,6 @@ import { bottomToTop, topToBottom } from '../../utils/animations';
 import './About.styles.scss';
 
 export default function About({ width }) {
-  console.log(width);
   return (
     <>
    

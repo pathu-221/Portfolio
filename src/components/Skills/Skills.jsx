@@ -55,7 +55,7 @@ export default function Skills() {
              {
             skills.map(skill => 
               <motion.li
-             
+              key={skill}
               >
                 <motion.img  variants={item} src={skill} alt='skill icon'/>
               </motion.li>)
@@ -79,7 +79,7 @@ export default function Skills() {
              {
             skills.map(skill => 
               <motion.li
-             
+             key={skill}
               >
                 <motion.img  variants={item} src={skill} alt='skill icon'/>
               </motion.li>)
