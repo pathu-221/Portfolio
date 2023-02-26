@@ -35,8 +35,8 @@ export default function Skills() {
     animate={'animate'}
     exit={'initial'}
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
+      Also this list is continously expanding, pretty soon i would run out of space to list 
+      all of them 😜
     </motion.p>
     </div>
      </motion.div>

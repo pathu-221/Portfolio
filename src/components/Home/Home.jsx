@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion';
 import { bottomToTop, topToBottom } from '../../utils/animations';
 
@@ -6,14 +6,6 @@ import './Home.styles.scss';
 
 export default function Home({gif}) {
 
-
-  useEffect(() => {
-    
-    return () => {
-      
-    }
-  }, [])
-  
 
   return (
     <>
@@ -35,8 +27,8 @@ export default function Home({gif}) {
     animate={'animate'}
     exit={'initial'}
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
+      I'm passionate web developer creating awesome websites and web applications with clean, 
+      optimized, and maintainable code.
     </motion.p>
    </div>
     </motion.div>

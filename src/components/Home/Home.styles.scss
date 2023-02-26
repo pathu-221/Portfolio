@@ -22,7 +22,7 @@
   
 
   .content {
-    padding-left: 110px;
+    padding-left: 95px;
     padding-right: 25px;
     text-align: left;
     display: flex;
@@ -47,10 +47,7 @@
   .right-content {
     display: flex;
     gap: 0;
-    max-width: 100vw;
-    // place-items: center;
-    // position: relative;
-    padding-right: 110px;
+    padding-right: 95px;
     padding-left: 120px;
 
     & .image-container {

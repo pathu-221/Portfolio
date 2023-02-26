@@ -23,8 +23,8 @@ export default function Projects() {
     initial={'initial'}
     animate={'animate'}
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
+      These are some personal projects I did, constantly exploring new technologies
+      and needless to say this list also keeps growing :)
     </motion.p>
    </div>
      </motion.div>

@@ -15,7 +15,7 @@ export default function About({ width }) {
     animate={'animate'}
     exit={'exit'}
     className="ml10">
-      <motion.span className="letters">Who am I? And What i do?</motion.span><br></br>
+      <motion.span className="letters">Let me tell you a little more about myself. </motion.span><br></br>
     </motion.h3>
     <motion.p
     className='para-text'
@@ -24,8 +24,7 @@ export default function About({ width }) {
     animate={'animate'}
     exit={'initial'}
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-      Nostrum culpa quae tempora. Enim explicabo quae eius iste fugiat, vitae i
+    
     </motion.p>
 
    </div>

@@ -83,7 +83,7 @@ function App() {
     else if(p >= 62 && p < 98) {
       changeCurrentElement('Projects');
     }
-    else if(p >= 98){
+    else if(p >= 95){
       changeCurrentElement('Contact');
     }
     else {
