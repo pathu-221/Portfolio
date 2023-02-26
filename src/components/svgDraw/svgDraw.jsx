@@ -23,7 +23,7 @@ function SvgDraw(props) {
       targets: '.st0',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
-      duration: 1500,
+      duration: pathLength,
       autoplay: false,
       delay: function(el, i) { return i * 250 },
     });
@@ -36,7 +36,7 @@ function SvgDraw(props) {
       //calclating scroll percentage
      scrollPercentage =  (window.scrollY + windowHeight) / totalHeight;
      setpath((pathLength) * scrollPercentage);
-     changeElement(path);
+     changeElement(scrollPercentage);
     })
 
 

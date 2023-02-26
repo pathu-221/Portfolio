@@ -68,20 +68,27 @@ function App() {
   }, [])
   
 
-  const changeElement = (pathlength) => {
+  const changeElement = (scrollPercentage) => {
 
-    //component will change according to the length of the path not 
-    //to the amount scrolled
-    if ((window.pageYOffset >= 433 && window.pageYOffset < 1091) || (pathlength >= 455 && pathlength < 712)) 
-      {  changeCurrentElement('About');}
-    else if ((window.pageYOffset >= 1091 && window.pageYOffset < 1733) || (pathlength >= 712 && pathlength < 955))  //1091
-    {  changeCurrentElement('Skills')}
-    else if ((window.pageYOffset >= 1733 && window.pageYOffset < 2760) || (pathlength >= 955 && pathlength < 1385))  //1733
-    {  changeCurrentElement('Projects');}
-    else if (window.pageYOffset >= 2760 || pathlength >= 1385) //3160
-    { changeCurrentElement('Contact');}
-    else
-    {   changeCurrentElement('Home')}
+    //.31 .47 .62 .98 threshold to change the element
+    // element will change according to scroll percentage
+
+    var p = Math.round(scrollPercentage * 100);
+    if(p > 31 && p < 47){
+      changeCurrentElement('About');
+    }
+    else if(p >= 47 && p < 62 ){
+      changeCurrentElement('Skills');
+    }
+    else if(p >= 62 && p < 98) {
+      changeCurrentElement('Projects');
+    }
+    else if(p >= 98){
+      changeCurrentElement('Contact');
+    }
+    else {
+      changeCurrentElement('Home');
+    }
 
   }
 
