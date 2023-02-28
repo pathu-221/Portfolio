@@ -145,7 +145,7 @@ function App() {
         }
       
       <div className='content-container'>
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <motion.div key={currentElement} className='content-wrapper'>
          { element()}
         </motion.div>
