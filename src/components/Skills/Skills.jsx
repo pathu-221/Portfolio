@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { bottomToTop, topToBottom, staggeredUp } from '../../utils/animations';
-import { skills } from './skillsData';
+import { languages, devTools } from './skillsData';
 
 import './Skills.styles.scss';
 
@@ -53,7 +53,7 @@ export default function Skills() {
           exit={'hidden'}
           className="skills-images">
              {
-            skills.map(skill => 
+            languages.map(skill => 
               <motion.li
               key={skill}
               >
@@ -77,7 +77,7 @@ export default function Skills() {
           exit={'hidden'}
           className="skills-images">
              {
-            skills.map(skill => 
+            devTools.map(skill => 
               <motion.li
              key={skill}
               >

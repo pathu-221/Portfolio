@@ -38,14 +38,16 @@
     width: 290px;
     height: 54px;
     overflow: hidden;
+
+    & h1 {
+      transform: translate(0, 0%);
+      font-size: 40px;
+      font-family: "Integral CF";
+      letter-spacing: 4px;
+    }
   }
 
-  & h1 {
-    transform: translate(0, 0%);
-    font-size: 45px;
-    font-family: "Integral CF";
-    letter-spacing: 4px;
-  }
+
 }
 
 a {

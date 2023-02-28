@@ -24,24 +24,23 @@ export default function About({ width }) {
     animate={'animate'}
     exit={'initial'}
     >
-    
+    Passionate Front-End Developer with a Keen Eye for Aesthetics and a Love for Innovation
     </motion.p>
 
    </div>
     </motion.div>
     <div className='right-content'>
       <div className="about-text">
-     {/* {
-      width > 800 ?   : null
-     } */}
      <motion.p
       variants={topToBottom}
       initial={'initial'}
       animate={'animate'}
       exit={'initial'}
       >
-        <span className="large-letter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor tortor gravida, 
-        rutrum massa ultrices, tristique tellus. Ut ac enim elit. 
+        <span className="large-letter">I</span>'m a front-end developer 
+        with a passion for creating engaging, user-friendly websites. 
+        While design may not be my strongest suit, I have a keen eye for aesthetics and a 
+        dedication to crafting beautiful, functional websites that truly make an impact. 
       </motion.p>
     <motion.p
     variants={bottomToTop}
@@ -49,9 +48,12 @@ export default function About({ width }) {
     animate={'animate'}
     exit={'initial'}
     >
-      t ac porttitor nisi, sed congue sem.
-       Praesent porta posuere leo, ac sagittis lacus posuere ut. Vestibulum finibus 
-      eros congue, sollicitudin lectus lobortis, tempus lectus. Duis id ultrices urna.
+      I've always been fascinated by professional work 
+      in the tech industry, from stunning artworks 
+      to innovative solutions to complex problems and I strive to be on that same level of creativity,
+      starting from here. <br></br>
+      PS I love working out, watching animes, read interesting articles and much more.
+
     </motion.p> 
       </div>
     </div>
