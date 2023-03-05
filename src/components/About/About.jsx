@@ -42,19 +42,19 @@ export default function About({ width }) {
         While design may not be my strongest suit, I have a keen eye for aesthetics and a 
         dedication to crafting beautiful, functional websites that truly make an impact. 
       </motion.p>
-    <motion.p
-    variants={bottomToTop}
-    initial={'initial'}
-    animate={'animate'}
-    exit={'initial'}
-    >
-      I've always been fascinated by professional work 
-      in the tech industry, from stunning artworks 
-      to innovative solutions to complex problems and I strive to be on that same level of creativity,
-      starting from here. <br></br>
-      PS I love working out, watching animes, read interesting articles and much more.
+      <motion.p
+      variants={bottomToTop}
+      initial={'initial'}
+      animate={'animate'}
+      exit={'initial'}
+      >
+        I've always been fascinated by professional work 
+        in the tech industry, from stunning artworks 
+        to innovative solutions to complex problems and I strive to be on that same level of creativity,
+        starting from here. <br></br>
+        PS:I love working out, watching animes, read interesting articles and much more.
 
-    </motion.p> 
+      </motion.p> 
       </div>
     </div>
     </>

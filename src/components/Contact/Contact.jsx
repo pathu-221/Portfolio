@@ -1,9 +1,22 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import CustomInput from '../customInput/CustomInput';
-import { topToBottom, bottomToTop } from '../../utils/animations';
+import { topToBottom, bottomToTop, staggeredRight } from '../../utils/animations';
 
 import './Contact.styles.scss';
+
+
+
+const item = {
+  hidden: { x: '100%' },
+  show: { x: '0',
+  transition: {
+    duration: .2,
+
+  }
+ },
+  exit: { x: '100%'}
+}
 
 function Contact() {
   return (
@@ -15,6 +28,7 @@ function Contact() {
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
+    exit={'initial'}
     className="ml10">
       <motion.span className="letters">Lets Connect! I would love to get in touch :)</motion.span><br></br>
     </motion.h3>
@@ -23,28 +37,39 @@ function Contact() {
     variants={bottomToTop}
     initial={'initial'}
     animate={'animate'}
+    exit={'initial'}
     >
       
     </motion.p>
    </div>
      </motion.div>
      <div className='right-content'>
-      <form className='contact-form'>
+     <div className='form-wrapper'>
+     <motion.form 
+      variants={staggeredRight}
+      initial="hidden"
+      animate="show"
+      exit={'hidden'}
+      className='contact-form'>
         <CustomInput 
+        variants={item}
         type='text'
         placeholder='Your good name'
         />
         <CustomInput 
+        variants={item}
         type='email'
         placeholder='Whats your email?'
         />
         <CustomInput 
+        variants={item}
         type='message'
         placeholder='Have something to talk about? Or just say Hi'
         />
-        <button class="button-31" role="button">Send</button>
+        <motion.button variants={item} class="button-31" role="button">Send</motion.button>
 
-      </form>
+      </motion.form>
+     </div>
      </div>
      </>
   )

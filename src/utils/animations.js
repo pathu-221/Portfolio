@@ -3,6 +3,9 @@ const transition = {
     ease: [0.43, 0.13, 0.23, 0.96],
 };
 
+
+
+
 export const staggeredUp = {
     hidden: { y: '100%'  },
     show: {
@@ -13,6 +16,19 @@ export const staggeredUp = {
       }
     },
     exit: { y: '100%'}
+  }
+  
+export const staggeredRight = {
+    hidden: { x: '100%'  },
+    show: {
+      x: 0,
+      transition: {
+        duration: .8, 
+        ease: [0.43, 0.13, 0.23, 0.96],
+        staggerChildren: .2
+      }
+    },
+    exit: { x: '100%'}
   }
   
 
