@@ -29,12 +29,12 @@ export default function Skills() {
        Here's what I use 
      </motion.h3>
      <motion.p
-    className='para-text'
-    variants={bottomToTop}
-    initial={'initial'}
-    animate={'animate'}
-    exit={'initial'}
-    >
+      className='para-text'
+      variants={bottomToTop}
+      initial={'initial'}
+      animate={'animate'}
+      exit={'initial'}
+      >
       Also this list is continously expanding, pretty soon i would run out of space to list 
       all of them 😜
     </motion.p>
@@ -45,7 +45,12 @@ export default function Skills() {
       <motion.div  className="skills-container" >
         <motion.div
           className="skills-content">
-          <h4>Languages and framework </h4>
+          <motion.h4
+          variants={bottomToTop}
+          initial={'initial'}
+          animate={'animate'}
+          exit={{y: '-150%', transition: { duration: .4}}}
+          >Languages and framework </motion.h4>
           <motion.ul 
           variants={staggeredUp}
           initial="hidden"
@@ -69,7 +74,7 @@ export default function Skills() {
           variants={bottomToTop}
           initial={'initial'}
           animate={'animate'}
-          exit={'initial'}>Tools </motion.h4>
+          exit={{y: '-150%', transition: { duration: .4}}}>Tools </motion.h4>
           <motion.ul 
           variants={staggeredUp}
           initial="hidden"

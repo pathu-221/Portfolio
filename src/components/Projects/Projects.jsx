@@ -11,10 +11,10 @@ export default function Projects() {
       <motion.div className='content'>
         <div className="head-content">
           <motion.h3
-            variants={bottomToTop}
+            variants={topToBottom}
             initial={'initial'}
             animate={'animate'}
-            exit={'exit'}
+            exit={'initial'}
             className="ml10">
             <motion.span className="letters">Have a look at my work -</motion.span><br></br>
           </motion.h3>
@@ -39,12 +39,7 @@ export default function Projects() {
         animate="animate"
         exit={'exit'} 
         className="project-type">
-          <div className="project-buttons-container">
-            <button className="button-31" role="button">Beginner</button>
-            <button className="button-31" role="button">Intermediate</button>
-            <button className="button-31" role="button">Advanced</button>
 
-          </div>
           <div className="project-overview">
             <Projectsoverview />
           </div>
@@ -55,3 +50,16 @@ export default function Projects() {
     </>
   )
 }
+
+
+
+
+/**
+ *            
+ * <div className="project-buttons-container">
+  <button className="button-31" role="button">Beginner</button>
+  <button className="button-31" role="button">Intermediate</button>
+  <button className="button-31" role="button">Advanced</button>
+
+</div>
+ */
