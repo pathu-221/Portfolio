@@ -66,8 +66,7 @@ function Contact() {
         type='message'
         placeholder='Have something to talk about? Or just say Hi'
         />
-        <motion.button variants={item} class="button-31" role="button">Send</motion.button>
-
+        <motion.button variants={item} className="button-1" role="button">Send</motion.button>
       </motion.form>
      </div>
      </div>
@@ -76,3 +75,7 @@ function Contact() {
 }
 
 export default Contact
+
+/**
+ * 
+ */

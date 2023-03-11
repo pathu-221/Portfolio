@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Projectsoverview from '../Projects-overview/Projectsoverview';
+import Projectsoverview from './Projects-overview/Projectoverview';
 import { topToBottom, bottomToTop } from '../../utils/animations';
 import './Projects.styles.scss';
 
@@ -39,10 +39,12 @@ export default function Projects() {
         animate="animate"
         exit={'exit'} 
         className="project-type">
-
-          <div className="project-overview">
-            <Projectsoverview />
+          <div className="buttons-container">
+            <button className='button-1'>Mini</button>
+            <button className='button-1'>Front end</button>
+            <button className='button-1'>Full Stack</button>
           </div>
+          <Projectsoverview />
         </motion.div>
         </motion.div>
 
