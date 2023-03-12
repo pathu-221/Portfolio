@@ -5,8 +5,15 @@
     align-items: center;
     //justify-content: center;
     overflow-y: scroll;
+    overflow-x: hidden;
+    padding-left: 26px;
+
     
     & img {
+
+        user-select: none;
+        border-radius: 16px;
+        aspect-ratio: 16/9;
         max-width: 100%;
         max-height: auto;
     };
@@ -16,4 +23,20 @@
         flex-direction: column;
         align-items: flex-start;;
     }
+}
+
+.project-overview:focus {
+    border: 1px solid black;
+}
+
+.project-overview::-webkit-scrollbar,
+.project-overview::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+.project-overview::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
 }
