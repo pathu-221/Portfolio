@@ -6,22 +6,27 @@ h1.demo {
     color: #f5f6ff;
   }
 
-  input, textarea { border-style: none; background: transparent; outline: none; 
+  input, textarea { 
+    border-radius: 12px;
+    border-style: none; background: transparent; outline: none; 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;}
+    sans-serif;
+  }
 
   // colors
   
   // gradient animation
   
   .webflow-style-input {
+
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 100%;
-    border-radius: 2px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     padding: 10px;
     background: var(--primary-Contact-dark);
     color: white;

@@ -11,6 +11,7 @@ import Contact from './components/Contact/Contact';
 import { motion, AnimatePresence, m} from 'framer-motion';
 import { bottomToTop } from './utils/animations';
 import styled from 'styled-components';
+import { Toaster } from 'react-hot-toast';
 
 const Div = styled.div`
   background-color: ${ props => props.color};
@@ -151,7 +152,7 @@ function App() {
         </motion.div>
         </AnimatePresence>
       </div>
-
+      <Toaster />
     </Div>
   );
 }
