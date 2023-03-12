@@ -4,7 +4,7 @@ import CustomInput from '../customInput/CustomInput';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
-import { bottomToTop, staggeredRight } from '../../utils/animations';
+import { bottomToTop, staggeredRight, topToBottom } from '../../utils/animations';
 
 import './Contact.styles.scss';
 
@@ -45,7 +45,7 @@ function Contact() {
     <motion.div className='content'>  
     <div className="head-content">
    <motion.h3
-    variants={bottomToTop}
+    variants={topToBottom}
     initial={'initial'}
     animate={'animate'}
     exit={'initial'}
@@ -59,7 +59,11 @@ function Contact() {
     animate={'animate'}
     exit={'initial'}
     >
-      
+      You can also use these methods to contact
+      <ul className='contact-list'>
+        <li><a href={'mailto:prathamaggarwal235@gmail.com'}>Email</a></li>
+        <li><a target={'_blank'} href='https://www.linkedin.com/in/pratham-aggarwal-48516b120'>Message on linkedIn</a></li>
+      </ul>
     </motion.p>
    </div>
      </motion.div>

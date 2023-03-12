@@ -11,8 +11,25 @@
         gap: 8px;
         width: 100%;
     }
-}
 
+  
+}
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  gap: 12px;
+  & li {
+    font-weight: 400;
+    & a:hover {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+  }
+
+}
 
 
 /* CSS */

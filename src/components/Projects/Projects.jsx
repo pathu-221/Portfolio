@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState }from 'react';
 import { motion } from 'framer-motion';
 import Projectsoverview from './Projects-overview/Projectoverview';
 import { topToBottom, bottomToTop } from '../../utils/animations';
+import { projects } from './projectsData';
 import './Projects.styles.scss';
 
 export default function Projects() {
+
+  const [select, setSelect] = useState('frontend');
+  console.log(select);
   return (
     <>
 
@@ -40,11 +44,17 @@ export default function Projects() {
         exit={'exit'} 
         className="project-type">
           <div className="buttons-container">
-            <button className='button-1'>Mini</button>
-            <button className='button-1'>Front end</button>
-            <button className='button-1'>Full Stack</button>
+            <button onClick={() => setSelect('mini')} className={`button-1 ${select === 'mini' ? 'select' : ''}`}>Mini</button>
+            <button onClick={() => setSelect('frontend')} className={`button-1 ${select === 'frontend' ? 'select' : ''}`}>Front end</button>
+            <button onClick={() => setSelect('fullstack')}className={`button-1 ${select === 'fullstack' ? 'select' : ''}`}>Full Stack</button>
           </div>
-          <Projectsoverview />
+          {select === 'mini' && <Projectsoverview  projects={projects.mini}/> }
+          {select === 'frontend' && <Projectsoverview  projects={projects.frontend}/> }
+          {select === 'fullstack' && <Projectsoverview  projects={projects.fullstack}/> }
+          { /** remember this implementation is better but i was not gettin the coming in animation so the 
+           * worse version
+           */}
+          {/* <Projectsoverview projects={projects[select]} /> */}
         </motion.div>
         </motion.div>
 

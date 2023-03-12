@@ -5,22 +5,10 @@ import { staggeredUp } from '../../../utils/animations';
 import './Projectoverview.styles.scss';
 
 
-const animations = {
-  
-  hidden: { y: '100%'  },
-  show: {
-    y: 0,
-    transition: {
-      duration: 0.4, 
-      delay: 0.4,
-      ease: [0.43, 0.13, 0.23, 0.96],
-      staggerChildren: .1
-    }
-  },
-  exit: { y: '100%'}
-}
 
-function Projectsoverview() {
+function Projectsoverview({projects}) {
+
+  console.log(projects);
   return (
     <motion.div 
     variants={staggeredUp}
@@ -28,9 +16,10 @@ function Projectsoverview() {
     animate="show"
     exit={'hidden'}
     className='project-overview'>
-      <ProjectDetail />
-      <ProjectDetail />
-      <ProjectDetail />
+     
+     {
+      projects.map((project, index) => <ProjectDetail key={index} project={project} />)
+     }
       {/* <div className='project-detail'>
         <img src={'https://picsum.photos/600/300'} alt='project'/>
       </div>
