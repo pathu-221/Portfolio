@@ -33,7 +33,7 @@
         & li {
             overflow-y: hidden;
             max-width: 80px;
-        max-height: 80px;
+            max-height: 80px;
         }
     }
     & img {
@@ -53,13 +53,13 @@
         }
 
         & .skills-images {
-            grid-template-columns: repeat(auto-fill, 14vw)
+            grid-template-columns: repeat(auto-fill, minmax(40px,  12vw))
         }
 
         & img {
             aspect-ratio: 1/1;
-            max-width: inherit;
-            ;
+            max-width: clamp(40px, 100%, 80px);
+            max-height: clamp(40px, 100%, 80px);
         }
     }
 }

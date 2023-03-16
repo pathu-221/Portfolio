@@ -63,6 +63,7 @@
     padding: 8px 15px;
     height: auto;
     bottom: 0;
+    z-index: inherit;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
     // background: linear-gradient(0deg, #00000088 30%, #ffffffca 100%);
   }

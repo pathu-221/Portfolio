@@ -6,7 +6,6 @@
     align-self: center;
     width: 100%;
     max-width: inherit;
-
     overflow: hidden;
 
     & .project-type {
@@ -29,5 +28,24 @@
             align-items: center;
             justify-content: center;
         }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .project-type-wrapper {
+        margin-top: 10px;;
+        & .project-type {
+
+            padding: 20px 0px;
+            border-radius: 16px;
+            display: flex;
+            background-color: var(--primary-Projects-dark);
+            max-height: 30vh;
+            min-height: 40vh;
+            flex-direction: column;
+            gap: 16px;
+            z-index: -999;
+
+            }
     }
 }
