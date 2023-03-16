@@ -34,7 +34,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-right: 200px;
+    padding-right: 14rem;
     text-align: right;
     width: 290px;
     height: 54px;
@@ -76,8 +76,9 @@ a {
 
 
 @media screen and (max-width: 800px) {
-
-
+      ::-webkit-scrollbar {
+        display: none;
+    }
 
   .background-div {
     background-color: var(--primary-orange-dark);
@@ -99,8 +100,8 @@ a {
   .page-head{
     z-index: 50;
     position: fixed;
-    left: 20px;
-    top: 40px;
+    left: 1.4rem;
+    top: 2.5rem;
     padding: 0;
     width: auto;
     height: auto;
@@ -117,8 +118,7 @@ a {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-      gap: 25px;
-      grid-column-start: 100vh;
+      gap: 10px;
     }
   }
 }
