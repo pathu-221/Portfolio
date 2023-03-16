@@ -53,12 +53,12 @@
         }
 
         & .skills-images {
-            grid-template-columns: repeat(auto-fill, 40px)
+            grid-template-columns: repeat(auto-fill, 14vw)
         }
 
         & img {
-            max-width:  40px;
-            max-height:  40px;
+            aspect-ratio: 1/1;
+            max-width: inherit;
             ;
         }
     }

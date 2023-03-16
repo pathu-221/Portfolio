@@ -43,6 +43,10 @@ a:visited {
   cursor: auto;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 * { 
   margin: 0;
   padding: 0;
