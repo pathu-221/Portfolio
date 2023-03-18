@@ -1,23 +1,36 @@
 .socials-container {
     position: fixed;
     z-index: 5;
-    left: 100px;
-    top: 40px;
+    left: calc(6rem - .6rem);
+    top: 2.5rem;
 
 
     & ul {
         display: flex;
         list-style-type: none;
-        gap: 50px;
+        gap: 4.2rem;
 
-        
-        & svg {
-            margin: 10px;
+        & li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & a {
+                width: inherit;
+                height: inherit;
+                cursor: pointer;
+                margin: .6rem;
+            }
         }
+
+        & svg {
+            margin: 0;
+        }
+
 
         & li:hover {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            cursor: pointer;
+
         }
 
     }

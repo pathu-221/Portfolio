@@ -62,7 +62,7 @@ export default function Skills() {
               <motion.li
               key={skill}
               >
-                <motion.img  variants={item} src={skill} alt='skill icon'/>
+                <motion.img  variants={item} src={skill.src} alt={skill.name}/>
               </motion.li>)
           } 
           </motion.ul>
@@ -86,7 +86,7 @@ export default function Skills() {
               <motion.li
              key={skill}
               >
-                <motion.img  variants={item} src={skill} alt='skill icon'/>
+                <motion.img  variants={item} src={skill.src} alt={skill.name}/>
               </motion.li>)
           } 
           </motion.ul>

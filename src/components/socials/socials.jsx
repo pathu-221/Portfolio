@@ -7,6 +7,7 @@ import { FiMail } from 'react-icons/fi';
 
 export default function Socials() {
     const iconSize = window.innerWidth < 800 ? 25 : 30;
+
   return (
     <nav className='socials-container'>
          <ul>
@@ -18,7 +19,7 @@ export default function Socials() {
             <li>
             <a href='https://www.linkedin.com/in/pratham-aggarwal-48516b120/' rel="noreferrer" target={'_blank'}>
                     <BsLinkedin color='white' size={iconSize} />
-                </a>
+            </a>
             </li>
             <li>
             <a href={'mailto:prathamaggarwal235@gmail.com'} rel="noreferrer" target={'_blank'}>
