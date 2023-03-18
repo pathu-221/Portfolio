@@ -74,6 +74,63 @@ a {
   }
 }
 
+.arrow-infinite-down {
+
+  animation: jumpInfiniteDown 1.5s infinite;
+}
+
+.arrow-infinite-up {
+
+  animation: jumpInfiniteUp 1.5s infinite;
+}
+
+@keyframes jumpInfiniteDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes jumpInfiniteUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes jumpInfiniteDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-indicator {
+  z-index: 999;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+
 
 @media only screen and (max-width: 800px) {
 

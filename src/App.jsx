@@ -12,6 +12,7 @@ import { motion, AnimatePresence, m} from 'framer-motion';
 import { bottomToTop } from './utils/animations';
 import styled from 'styled-components';
 import { Toaster } from 'react-hot-toast';
+import { BsMouse, BsChevronDown, BsChevronUp } from 'react-icons/bs';
 
 const Div = styled.div`
   background-color: ${ props => props.color};
@@ -110,6 +111,7 @@ function App() {
     }
   }
   return (
+    <>
     <Div 
     
     className="App" color={ `var(--primary-${currentElement})` }>
@@ -153,7 +155,22 @@ function App() {
         </AnimatePresence>
       </div>
       <Toaster />
+
     </Div>
+    
+      <div className="scroll-indicator">
+        <span style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }} >
+        { currentElement === 'Contact' ? <BsChevronUp className='arrow-infinite-up'  size={30} /> : null}
+        {/* <BsMouse size={50}/> */}
+        { currentElement !== 'Contact' ? <BsChevronDown className='arrow-infinite-down'  size={30} /> : null}
+        </span>
+      </div>
+      </>
   );
 }
 
