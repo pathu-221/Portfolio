@@ -20,12 +20,24 @@
 
 @media screen and (max-width: 800px) {
     .about-text {
-        font-size: 3vw;
+        font-size: .9rem;
         text-align: left;
         display: flex;
         flex-direction: column;
         gap: 8px;
         height: inherit;
-        padding-top: 20px;
+        padding-top: 1rem;
+
+        .large-letter {
+            font-size: 1.8rem;
+        }
+
+        .para-wrapper {
+            overflow-y: hidden  ;
+        }
+        p{
+            display: inline-block;
+            overflow: hidden;
+        }
     }
 }

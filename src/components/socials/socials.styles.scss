@@ -40,13 +40,12 @@
 
 @media screen and (max-width: 800px) {
     .socials-container{
-        display: none;
-        left: 20px;
-        top: auto;
-        bottom: 40px;;
+        //display: none;
+        right: 1.4rem;
+        top: 2.5rem;
         & ul {
-            flex-direction: column-reverse;
-            gap: 15px;
+            flex-direction: row-reverse;
+            gap: .5rem;
             align-items: flex-end;
         }
     }

@@ -21,7 +21,25 @@
    
         font-size: 24px;
         margin: 10px 0;
+    }   
+     & .tooltip {
+        //display: none;
+        position: absolute;
+        z-index: 5;
+        min-width: fit-content;
+        max-width: 200px;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+        background-color: white;
+        color: black;
+        padding: .3rem .6rem;
+        text-overflow: ellipsis;
+        visibility: hidden;
+        white-space: nowrap;
+		transform: translate(-50%, 1em);
     }
+
 
     & .skills-images {
         display: grid;
@@ -29,11 +47,17 @@
         gap: 16px;
         place-items: center;
         margin-bottom: 25px;
+
         // overflow-y: hidden;
         & li {
-            overflow-y: hidden;
             max-width: 80px;
             max-height: 80px;
+            position: relative;
+
+          
+        }
+        & li:hover .tooltip {
+            visibility: visible;
         }
     }
     & img {
@@ -42,6 +66,17 @@
         max-height: 80px;
     }
 
+
+
+}
+
+@keyframes animation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -61,5 +96,6 @@
             max-width: clamp(40px, 100%, 80px);
             max-height: clamp(40px, 100%, 80px);
         }
+
     }
 }

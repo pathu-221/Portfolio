@@ -11,7 +11,7 @@ export const languages = [
 export const devTools = [
     {src:'https://img.icons8.com/color/96/firebase.png', name: 'firebase'},
     {src:    'https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png',name: 'mongodb'},
-    {src:'https://img.icons8.com/color/96/visual-studio-code-2019.png', name: 'visual-studio-code'},
+    {src:'https://img.icons8.com/color/96/visual-studio-code-2019.png', name: 'vs-code'},
     {src:'https://img.icons8.com/color/96/git.png', name: 'git'},
     {src:'https://img.icons8.com/ios-filled/100/github.png', name: 'github'},
     {src:'https://img.icons8.com/fluency/96/node-js.png', name: 'node-js'},

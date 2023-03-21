@@ -31,6 +31,7 @@ export default function About({ width }) {
     </motion.div>
     <div className='right-content'>
       <div className="about-text">
+     <div className="para-wrapper">
      <motion.p
       variants={topToBottom}
       initial={'initial'}
@@ -42,6 +43,8 @@ export default function About({ width }) {
         While design may not be my strongest suit, I have a keen eye for aesthetics and a 
         dedication to crafting beautiful, functional websites that truly make an impact. 
       </motion.p>
+     </div>
+      <div className="para-wrapper">
       <motion.p
       variants={bottomToTop}
       initial={'initial'}
@@ -55,6 +58,7 @@ export default function About({ width }) {
         PS:I love working out, watching animes, read interesting articles and much more.
 
       </motion.p> 
+      </div>
       </div>
     </div>
     </>
