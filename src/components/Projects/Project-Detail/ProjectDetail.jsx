@@ -12,7 +12,6 @@ const item = {
 
 function ProjectDetail({project}) {
   const { name , description, live, github, image} = project;
-  console.log(project);
   return (
     <motion.div variants={item} className="article-card">
       {/* <div className='background-overlay'></div> */}

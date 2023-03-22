@@ -16,7 +16,7 @@ import { BsMouse, BsChevronDown, BsChevronUp } from 'react-icons/bs';
 
 const Div = styled.div`
   background-color: ${ props => props.color};
-  transition: .4s ease-out;
+  transition: .6s ease-out;
 `
 const DarkDiv = styled.div`
   background-color: ${ props => {  return props.color}};
@@ -148,7 +148,7 @@ function App() {
         }
       
       <div className='content-container'>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode="wait">
         <motion.div key={currentElement} className='content-wrapper'>
          { element()}
         </motion.div>
@@ -169,9 +169,14 @@ function App() {
         {/* <BsMouse size={50}/> */}
         { currentElement !== 'Contact' ? <BsChevronDown className='arrow-infinite-down'  size={30} /> : null}
         </span>
+        
       </div>
       </>
   );
 }
+
+/** 
+ * <button onClick={() => window.scrollTo(0,0,{ behavior: 'smooth'})}>Scroll to top</button>
+ */
 
 export default App;

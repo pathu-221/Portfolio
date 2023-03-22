@@ -74,13 +74,21 @@
   }
   
   .article-card .date {
-    font-size: 12px;
+    font-size: .8rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 4px;
   }
   
   .article-card .title {
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #fff;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .article-card {
+      & .date {
+        display: none;
+      }
+    }
   }
   

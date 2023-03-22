@@ -36,7 +36,7 @@ export default function Skills() {
       exit={'initial'}
       >
       Also this list is continously expanding, pretty soon i would run out of space to list 
-      all of them 😜
+      all of them :p
     </motion.p>
     </div>
      </motion.div>
@@ -58,9 +58,9 @@ export default function Skills() {
           exit={'hidden'}
           className="skills-images">
              {
-            languages.map(skill => 
+            languages.map((skill, index) => 
               <motion.li
-              key={skill}
+              key={index}
               >
                 <motion.img  variants={item} src={skill.src} alt={skill.name}/>
                 <span className='tooltip'>{skill.name}</span>
@@ -83,9 +83,9 @@ export default function Skills() {
           exit={'hidden'}
           className="skills-images">
              {
-            devTools.map(skill => 
+            devTools.map((skill, index) => 
               <motion.li
-             key={skill}
+             key={index}
               >
                 <motion.img  variants={item} src={skill.src} alt={skill.name}/>
                 <span className='tooltip'>{skill.name}</span>

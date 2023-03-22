@@ -8,7 +8,6 @@ import './Projects.styles.scss';
 export default function Projects() {
 
   const [select, setSelect] = useState('frontend');
-  console.log(select);
   return (
     <>
 
