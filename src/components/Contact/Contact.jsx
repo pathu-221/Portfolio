@@ -50,7 +50,7 @@ function Contact() {
     animate={'animate'}
     exit={'initial'}
     className="ml10">
-      <motion.span className="letters">Lets Connect! I would love to get in touch :)</motion.span><br></br>
+      <motion.span className="letters">Lets Connect! I would love to get in touch </motion.span><br></br>
     </motion.h3>
     <motion.p
     className='para-text'
@@ -59,7 +59,7 @@ function Contact() {
     animate={'animate'}
     exit={'initial'}
     >
-     Feel free to message me :)
+     Feel free to message me
      <ul className='contact-list'>
         <li><a href={'mailto:prathamaggarwal235@gmail.com'}>Email</a></li>
         <li><a target={'_blank'} href='https://www.linkedin.com/in/pratham-aggarwal-48516b120'>Message on linkedIn</a></li>

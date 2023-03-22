@@ -36,7 +36,7 @@ export default function Skills() {
       exit={'initial'}
       >
       Also this list is continously expanding, pretty soon i would run out of space to list 
-      all of them :p
+      all of them
     </motion.p>
     </div>
      </motion.div>

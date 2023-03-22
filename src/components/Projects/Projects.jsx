@@ -29,7 +29,7 @@ export default function Projects() {
             exit={'initial'}
           >
             These are some personal projects I did, constantly exploring new technologies
-            and needless to say this list also keeps growing :)
+            and needless to say this list also keeps growing
           </motion.p>
         </div>
       </motion.div>
