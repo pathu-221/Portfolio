@@ -59,13 +59,13 @@ function Contact() {
     animate={'animate'}
     exit={'initial'}
     >
-     Having some problem? Use these 👇
-
-    </motion.p>
-    <ul className='contact-list'>
+     Feel free to message me :)
+     <ul className='contact-list'>
         <li><a href={'mailto:prathamaggarwal235@gmail.com'}>Email</a></li>
         <li><a target={'_blank'} href='https://www.linkedin.com/in/pratham-aggarwal-48516b120'>Message on linkedIn</a></li>
       </ul>
+    </motion.p>
+
    </div>
 
      </motion.div>
