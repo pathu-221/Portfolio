@@ -78,23 +78,18 @@ function App() {
     var p = Math.round(scrollPercentage * 100);
     if(p > 31 && p < 47){
       changeCurrentElement(() => 'About');
-      console.log(currentElement);
     }
     else if(p >= 47 && p < 62 ){
       changeCurrentElement(() => 'Skills');
-      console.log(currentElement);
     }
     else if(p >= 62 && p < 98) {
       changeCurrentElement(() => 'Projects');
-      console.log(currentElement);
     }
     else if(p >= 95){
       changeCurrentElement(() => 'Contact');
-      console.log(currentElement);
     }
     else {
       changeCurrentElement('Home');
-      console.log(currentElement);
     }
 
   }
@@ -153,19 +148,12 @@ function App() {
         }
       <AnimatePresence  mode="wait" initial={false}>
       
-      <motion.div  key={currentElement} className='content-container'>
+        <motion.div  key={currentElement} className='content-container'>
 
-        <motion.div     className='content-wrapper'>
-         { currentElement === 'Home' && <><Home width={width} gif={gif}/></>}
-         { currentElement === 'About' && <><About width={width} gif={gif}/></>}
-         { currentElement === 'Skills' && <><Skills width={width} gif={gif}/></>}
-          {currentElement === 'Projects' && <><Projects width={width} gif={gif}/></>}
-         { currentElement === 'Contact' && <><Contact width={width} gif={gif}/></>}
-  
+          <motion.div className='content-wrapper'>
+            { element() }
+          </motion.div>
         </motion.div>
-      
-        </motion.div>
-
       </AnimatePresence>
       <Toaster />
 
