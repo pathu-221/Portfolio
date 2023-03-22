@@ -8,7 +8,7 @@ function CustomInput(props) {
     
   return (
 
-        <motion.div variants={variants} class="webflow-style-input">
+        <motion.div variants={variants} className="webflow-style-input">
         {
             type === 'message'?
             <textarea className="" name={name}  onChange={onChange} rows={'4'} type={ 'text' } placeholder={placeholder}/>

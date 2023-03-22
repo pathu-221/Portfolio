@@ -60,12 +60,14 @@ function Contact() {
     exit={'initial'}
     >
      Having some problem? Use these 👇
-      <ul className='contact-list'>
+
+    </motion.p>
+    <ul className='contact-list'>
         <li><a href={'mailto:prathamaggarwal235@gmail.com'}>Email</a></li>
         <li><a target={'_blank'} href='https://www.linkedin.com/in/pratham-aggarwal-48516b120'>Message on linkedIn</a></li>
       </ul>
-    </motion.p>
    </div>
+
      </motion.div>
      <div className='right-content'>
      <div className='form-wrapper'>
