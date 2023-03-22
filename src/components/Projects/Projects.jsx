@@ -10,7 +10,7 @@ export default function Projects() {
   const [select, setSelect] = useState('frontend');
   return (
     <>
-
+  
       <motion.div className='content'>
         <div className="head-content">
           <motion.h3

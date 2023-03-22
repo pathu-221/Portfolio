@@ -97,7 +97,7 @@ function App() {
   const element = () => {
     switch(currentElement){
       case "Home":
-        return <><Home width={width} gif={gif}/></>
+        return 
       case "About":
         return <><About width={width} /></>
       case "Skills":
@@ -146,12 +146,17 @@ function App() {
             </motion.div>
           </AnimatePresence> : null
         }
-      <AnimatePresence initial={false} mode="wait">
+      <AnimatePresence  mode="wait">
       
-      <motion.div key={currentElement}  className='content-container'>
+      <motion.div  key={currentElement} className='content-container'>
 
-        <motion.div    className='content-wrapper'>
-         { element()}
+        <motion.div     className='content-wrapper'>
+         { currentElement === 'Home' && <><Home width={width} gif={gif}/></>}
+         { currentElement === 'About' && <><About width={width} gif={gif}/></>}
+         { currentElement === 'Skills' && <><Skills width={width} gif={gif}/></>}
+          {currentElement === 'Projects' && <><Projects width={width} gif={gif}/></>}
+         { currentElement === 'Contact' && <><Contact width={width} gif={gif}/></>}
+  
         </motion.div>
       
         </motion.div>
