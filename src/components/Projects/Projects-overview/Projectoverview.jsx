@@ -8,7 +8,6 @@ import './Projectoverview.styles.scss';
 
 function Projectsoverview({projects}) {
 
-  console.log(projects);
   return (
     <motion.div 
     variants={staggeredUp}
