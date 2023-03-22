@@ -10,10 +10,10 @@ export default function About({ width }) {
    <motion.div className='content'>  
    <div className="head-content">
    <motion.h3
-    variants={bottomToTop}
+    variants={topToBottom}
     initial={'initial'}
     animate={'animate'}
-    exit={'exit'}
+    exit={'initial'}
     className="ml10">
       <motion.span className="letters">A little more about myself. </motion.span><br></br>
     </motion.h3>

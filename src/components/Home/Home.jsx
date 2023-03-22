@@ -12,10 +12,10 @@ export default function Home({gif}) {
     <motion.div className='content'>  
    <div className="head-content">
    <motion.h3
-    variants={bottomToTop}
+    variants={topToBottom}
     initial={'initial'}
     animate={'animate'}
-    exit={'exit'}
+    exit={'initial'}
     className="ml10">
       Hi there, I am Pratham, 
       A web developer from India
