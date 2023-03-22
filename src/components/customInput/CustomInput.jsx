@@ -11,9 +11,9 @@ function CustomInput(props) {
         <motion.div variants={variants} className="webflow-style-input">
         {
             type === 'message'?
-            <textarea className="" name={name}  onChange={onChange} rows={'4'} type={ 'text' } placeholder={placeholder}/>
+            <textarea required className="" name={name}  onChange={onChange} rows={'4'} type={ 'text' } placeholder={placeholder}/>
             :
-            <input className="" onChange={onChange} name={name} type={ type } placeholder={placeholder}></input>
+            <input required className="" onChange={onChange} name={name} type={ type } placeholder={placeholder}></input>
         }
         </motion.div>
 
