@@ -146,9 +146,9 @@ function App() {
             </motion.div>
           </AnimatePresence> : null
         }
-      <AnimatePresence  mode='wait'>
+      <AnimatePresence initial={false}  mode='wait'>
       
-      <motion.div  key={currentElement} initial={false} className='content-container'>
+      <motion.div  key={currentElement} className='content-container'>
 
         <motion.div    className='content-wrapper'>
          { element()}
