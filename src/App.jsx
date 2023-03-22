@@ -78,18 +78,23 @@ function App() {
     var p = Math.round(scrollPercentage * 100);
     if(p > 31 && p < 47){
       changeCurrentElement(() => 'About');
+      console.log(currentElement);
     }
     else if(p >= 47 && p < 62 ){
       changeCurrentElement(() => 'Skills');
+      console.log(currentElement);
     }
     else if(p >= 62 && p < 98) {
       changeCurrentElement(() => 'Projects');
+      console.log(currentElement);
     }
     else if(p >= 95){
       changeCurrentElement(() => 'Contact');
+      console.log(currentElement);
     }
     else {
       changeCurrentElement('Home');
+      console.log(currentElement);
     }
 
   }
