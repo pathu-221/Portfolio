@@ -77,16 +77,16 @@ function App() {
 
     var p = Math.round(scrollPercentage * 100);
     if(p > 31 && p < 47){
-      changeCurrentElement('About');
+      changeCurrentElement(() => 'About');
     }
     else if(p >= 47 && p < 62 ){
-      changeCurrentElement('Skills');
+      changeCurrentElement(() => 'Skills');
     }
     else if(p >= 62 && p < 98) {
-      changeCurrentElement('Projects');
+      changeCurrentElement(() => 'Projects');
     }
     else if(p >= 95){
-      changeCurrentElement('Contact');
+      changeCurrentElement(() => 'Contact');
     }
     else {
       changeCurrentElement('Home');
@@ -148,7 +148,7 @@ function App() {
         }
       
       <div className='content-container'>
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <motion.div key={currentElement} className='content-wrapper'>
          { element()}
         </motion.div>
