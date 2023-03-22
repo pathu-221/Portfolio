@@ -67,7 +67,7 @@ function App() {
       window.removeEventListener('resize', () => { console.log('removed')});
 
     }
-  }, [])
+  }, [currentElement])
   
 
   const changeElement = (scrollPercentage) => {
