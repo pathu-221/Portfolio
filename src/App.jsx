@@ -146,17 +146,17 @@ function App() {
             </motion.div>
           </AnimatePresence> : null
         }
-        <motion.div className='content-container'>
-      <AnimatePresence initial = {false} mode='wait'>
+      <AnimatePresence  mode='wait'>
       
-      
-        <motion.div  key={currentElement}   className='content-wrapper'>
+      <motion.div  key={currentElement} initial={false} className='content-container'>
+
+        <motion.div    className='content-wrapper'>
          { element()}
         </motion.div>
       
-      
+        </motion.div>
+
       </AnimatePresence>
-      </motion.div>
       <Toaster />
 
     </Div>
