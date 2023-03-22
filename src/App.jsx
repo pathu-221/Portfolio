@@ -97,7 +97,7 @@ function App() {
   const element = () => {
     switch(currentElement){
       case "Home":
-        return <><Home width={width} /></>
+        return <><Home gif={gif} width={width} /></>
       case "About":
         return <><About width={width} /></>
       case "Skills":
