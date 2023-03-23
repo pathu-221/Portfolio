@@ -27,12 +27,7 @@ const DarkDiv = styled.div`
   }
 `
 
-/**
- * 
- * @returns i dont know what to do
- * i am having trouble with responsiveness
- * this sucks
- */
+
 
 // ⣿⣿⣿⣿⠿⢋⣩⣤⣴⣶⣶⣦⣙⣉⣉⣉⣉⣙⡛⢋⣥⣶⣶⣶⣶⣶⣬⡙⢿⣿
 // ⣿⣿⠟⣡⣶⣿⢟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠙
