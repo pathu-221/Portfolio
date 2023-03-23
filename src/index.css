@@ -13,14 +13,14 @@
 }
 
 :root {
-  --primary-About: #F6ADC9;
-  --primary-About-dark: #E58C99;
-  --primary-Projects: #CDB5D7;
-  --primary-Projects-dark: #BD8FD0; 
+  --primary-About: #CA4C76;
+  --primary-About-dark: #b23b62;
+  --primary-Projects: #6B78BF;
+  --primary-Projects-dark: #2155a9; 
   --primary-Home: #EF4323; 
   --primary-Home-dark: #DA3213;
-  --primary-Contact: #F36D21;
-  --primary-Contact-dark: #EA5B0B;
+  --primary-Contact: #D94848;
+  --primary-Contact-dark: #bd3131;
   --primary-Skills: #9D1C2C;
   --primary-Skills-dark: #790C1A;
 }
