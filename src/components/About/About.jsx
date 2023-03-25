@@ -38,10 +38,13 @@ export default function About({ width }) {
       animate={'animate'}
       exit={'initial'}
       >
-        <span className="large-letter">I</span>'m a front-end developer 
-        with a passion for creating engaging, user-friendly websites. 
-        While design may not be my strongest suit, I have a keen eye for aesthetics and a 
-        dedication to crafting beautiful, functional websites that truly make an impact. 
+        <span className="large-letter">A</span>s a front-end developer, 
+        I'm passionate about creating websites that provide
+         a seamless user experience. Although design might not be my strongest suit, 
+         I have a keen eye for aesthetics and a dedication to crafting websites that 
+         are highly functional and make a real impact.
+
+
       </motion.p>
      </div>
       <div className="para-wrapper">
@@ -51,11 +54,13 @@ export default function About({ width }) {
       animate={'animate'}
       exit={'initial'}
       >
-        I've always been fascinated by professional work 
-        in the tech industry, from stunning artworks 
-        to innovative solutions to complex problems and I strive to be on that same level of creativity,
-        starting from here. <br></br>
-        PS:I love working out, watching animes, read interesting articles and much more.
+        The tech industry never ceases to fascinate me, 
+        from groundbreaking solutions to complex problems to beautiful works of art.
+        In my free time, you can usually find me working out or immersing myself 
+        in the captivating world of anime. I also love to read interesting articles on a 
+        variety of subjects, so feel free to recommend your favorites! And of course, Feel free
+        to reach out and connect with me - 
+        I'm always excited to meet new people
 
       </motion.p> 
       </div>
