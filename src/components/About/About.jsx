@@ -40,8 +40,7 @@ export default function About({ width }) {
       >
         <span className="large-letter">A</span>s a front-end developer, 
         I'm passionate about creating websites that provide
-         a seamless user experience. Although design might not be my strongest suit, 
-         I have a keen eye for aesthetics and a dedication to crafting websites that 
+         a seamless user experience. I have a keen eye for aesthetics and a dedication to crafting websites that 
          are highly functional and make a real impact.
 
 

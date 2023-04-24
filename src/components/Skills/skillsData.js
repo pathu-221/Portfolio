@@ -15,5 +15,6 @@ export const devTools = [
     {src:'https://img.icons8.com/color/96/git.png', name: 'git'},
     {src:'https://img.icons8.com/ios-filled/100/github.png', name: 'github'},
     {src:'https://img.icons8.com/fluency/96/node-js.png', name: 'node-js'},
+    {src:'https://img.icons8.com/fluency/256/tailwind_css.png', name: 'tailwind-css'},
 
 ]
