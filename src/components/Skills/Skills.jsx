@@ -7,9 +7,9 @@ import './Skills.styles.scss';
 
 
 const item = {
-  hidden: { y: '100%' },
+  hidden: { y: '150%' },
   show: { y: '0' },
-  exit: { y: '100%'}
+  exit: { y: '150%'}
 }
 
 export default function Skills() {
